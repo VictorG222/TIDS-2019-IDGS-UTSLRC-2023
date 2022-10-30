@@ -1,0 +1,15 @@
+Durante este quinto cuatrimestre de estudio, elaboramos un
+proyecto integrando los conocimientos adquiridos en las 
+diferentes materias del cuatrimestre.
+
+Este proyecto es elaborado por un equipo de estudiantes 
+el cual realiza diferentes actividades para completar 
+el proyecto en cuestión.
+
+Hoy presentaremos un avanze de todo lo relacionado con 
+la construcción del mismo proyecto y la elaboración 
+completada hasta el día de hoy. 10 de agosto
+
+Nuestro proyecto consta de la creación de una robusta 
+arquitectura IOT la cual es implementada para el 
+monitoreo de bóvedas bancarias.

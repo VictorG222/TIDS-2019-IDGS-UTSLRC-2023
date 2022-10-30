@@ -1,0 +1,65 @@
+{
+    "nombrecompleto": "Victor Galvan",
+    "telefono": "6532097580",
+    "sexo": "masculino",
+    "fechadenacimiento": "02/11/2000",
+    "direccion": "Avenida Flores",
+    "ciudad": "San Luis Rio Colorado",
+    "estadomx": "Sonora",
+    "cp": "93497",
+    "email": "@gmail.com",
+    "estado": "activo",
+    "tipodesangre": "O-"
+}
+{
+    "nombrecompleto": "",
+    "telefono": "6531237680",
+    "sexo": "masculino",
+    "fechadenacimiento": "01/07/1990",
+    "direccion": "Avenida Bugambilias",
+    "ciudad": "San Luis Rio Colorado",
+    "estadomx": "Sonora",
+    "cp": "93496",
+    "email": "@gmail.com",
+    "estado": "activo",
+    "tipodesangre": "O+"
+}
+{
+    "nombrecompleto": "",
+    "telefono": "6532099731",
+    "sexo": "masculino",
+    "fechadenacimiento": "03/7/2000",
+    "direccion": "Avenida Nayarit",
+    "ciudad": "San Luis Rio Colorado",
+    "estadomx": "Sonora",
+    "cp": "93496",
+    "email": "@gmail.com",
+    "estado": "activo",
+    "tipodesangre": "AB"
+}
+{
+    "nombrecompleto": "",
+    "telefono": "6532065465",
+    "sexo": "femenino",
+    "fechadenacimiento": "08/5/2000",
+    "direccion": "Avenida Libertad",
+    "ciudad": "San Luis Rio Colorado",
+    "estadomx": "Sonora",
+    "cp": "93495",
+    "email": "@gmail.com",
+    "estado": "inactivo",
+    "tipodesangre": "O+"
+}
+{
+    "nombrecompleto": "",
+    "telefono": "6532073168",
+    "sexo": "femenino",
+    "fechadenacimiento": "23/10/2000",
+    "direccion": "Avenida Revolucion",
+    "ciudad": "San Luis Rio Colorado",
+    "estadomx": "Sonora",
+    "cp": "93494",
+    "email": "@gmail.com",
+    "estado": "inactivo",
+    "tipodesangre": "A+"
+}

@@ -1,0 +1,206 @@
+import 'package:animate_do/animate_do.dart';
+import 'package:elemento3/src/models/models.dart';
+import 'package:elemento3/src/providers/providers.dart';
+import 'package:elemento3/src/search/usuario_seach.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class HomePage extends StatelessWidget {
+  // final usuarioProvider = Get.put(UsuarioProvider());
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Sección de usuarios'),
+        actions: [
+          _BotonSearch(),
+        ],
+      ),
+      body: GetBuilder<UsuarioProvider>(
+        init: UsuarioProvider(),
+        builder: (UsuarioProvider usuarioProvider) {
+          return (usuarioProvider.cargando == false)
+              ? RefreshIndicator(
+                  onRefresh: usuarioProvider.usuarioRefresh,
+                  child: ListView.builder(
+                    itemCount: usuarioProvider.usuarios.length,
+                    itemBuilder: (BuildContext context, int i) {
+                      return FadeInLeft(
+                        child: _CardUsuario(usuarioProvider.usuarios[i]),
+                      );
+                    },
+                  ),
+                )
+              : Center(
+                  child: CircularProgressIndicator(),
+                );
+        },
+      ),
+    );
+  }
+}
+
+class _BotonSearch extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        showSearch(context: context, delegate: UsuarioSeach());
+      },
+      icon: Icon(Icons.search),
+    );
+  }
+}
+
+class _CardUsuario extends StatelessWidget {
+  final UsuarioModel usuario;
+  _CardUsuario(this.usuario);
+  @override
+  Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
+    return Padding(
+      padding: EdgeInsets.all(25.0),
+      child: Container(
+        decoration: decorationCard(),
+        width: double.infinity,
+        height: _size.height * 0.35,
+        child: Stack(
+          children: [
+            _ImagenUser(usuario.foto),
+            _ContenerdorTop(usuario),
+            _ContenerdorBottom(usuario)
+          ],
+        ),
+      ),
+    );
+  }
+
+  BoxDecoration decorationCard() {
+    return BoxDecoration(
+      color: Colors.white,
+      boxShadow: [
+        BoxShadow(
+          blurRadius: 14.0,
+          offset: Offset(8, 10),
+          color: Colors.grey,
+        )
+      ],
+      borderRadius: BorderRadius.circular(25.0),
+    );
+  }
+}
+
+class _ContenerdorTop extends StatelessWidget {
+  final UsuarioModel usuario;
+  _ContenerdorTop(this.usuario);
+  @override
+  Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
+
+    return Container(
+      width: _size.width * 0.43,
+      height: _size.height * 0.09,
+      decoration: BoxDecoration(
+        color: Color.fromRGBO(100, 30, 200, 0.6),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(25),
+          bottomRight: Radius.circular(25),
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            usuario.usuario,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 20.0,
+            ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+          Text(
+            usuario.email,
+            style: TextStyle(color: Colors.white, fontSize: 15.0),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class _ContenerdorBottom extends StatelessWidget {
+  final UsuarioModel usuario;
+  _ContenerdorBottom(this.usuario);
+  @override
+  Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
+
+    return Positioned(
+      right: 0.0,
+      bottom: 0.0,
+      child: Container(
+        width: _size.width * 0.28,
+        height: _size.height * 0.06,
+        decoration: BoxDecoration(
+          color: Color.fromRGBO(100, 30, 200, 0.8),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(25),
+            bottomRight: Radius.circular(25),
+          ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Text(
+            'ID: ${usuario.id}',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 18.0,
+            ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ImagenUser extends StatelessWidget {
+  final String? foto;
+  _ImagenUser(this.foto);
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(25.0),
+      child: FadeInImage(
+        fit: BoxFit.cover,
+        height: double.infinity,
+        width: double.infinity,
+        image: (foto != null)
+            ? NetworkImage(foto!)
+            : AssetImage('assets/images/no_user.jpg') as ImageProvider,
+        placeholder: AssetImage('assets/images/loading.gif'),
+      ),
+    );
+  }
+}
+
+
+// (foto != null)
+//           ? Image.network(
+//               foto!,
+//               fit: BoxFit.cover,
+//               width: double.infinity,
+//               height: double.infinity,
+//             )
+//           : Image.asset(
+//               'assets/images/no_user.jpg',
+//               fit: BoxFit.cover,
+//               width: double.infinity,
+//               height: double.infinity,
+//             ),

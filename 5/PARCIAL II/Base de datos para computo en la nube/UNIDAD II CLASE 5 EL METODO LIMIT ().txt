@@ -1,0 +1,24 @@
+Para limitar los registros en MongoDB, debe usar el método limit () . El método acepta un argumento de tipo numérico, que es el número de documentos que desea que se muestren.
+
+Esta es la sintaxis: 
+db.COLLECTION_NAME.find().limit(NUMBER)
+
+Crear una base de datos llamada "escuela"
+Crear una colección llamada "cursos" e insertar los siguientes documentos:
+{
+"title: "MongoDB Overview",
+ "alumno" : "Sergio Amillano"
+
+}, 
+{
+"title: "NoSQL Overview",
+  "alumno" : "Mario Martinez"
+
+}, 
+{
+"title: "Tutorials Point Overview",
+ "alumno" : "Jose Perez"
+}
+
+poner el limite de los documentos usando la siguiente sintaxis: db.cursos.find({},{"title":1,"alumno":1,_id:0}).limit(2)
+deberás subir la foto del antes y después, tal y como se muestra el ejemplo adjunto, además de incluir tu nombre en alguno curso que salga en  tu screenshot.

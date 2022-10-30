@@ -1,0 +1,15 @@
+En MongoDB, la proyección significa seleccionar CAMPOS necesarios en lugar de seleccionar todos los datos de un documento. Si un documento tiene 5 CAMPOS y necesita mostrar solo 3, seleccione solo 3 de ellos.
+
+El método find () de MongoDB , acepta el segundo parámetro opcional que es la lista de campos que desea recuperar. En MongoDB, cuando ejecuta el método find () , muestra todos los campos de un documento. Para limitar esto, debe establecer una lista de campos con valor 1 o 0. Se usa 1 para mostrar el campo mientras que 0 se usa para ocultar los campos.
+
+En la base de datos HOSPITAL de la clase UNIDAD II CLASE 2, aplicaremos PROYECCION en algunos campos para mostrar SOLO aquellos campos que deseemos.
+
+
+Esta es la sintaxis para realizar una consulta con proyección:
+db.COLLECTION_NAME.find({},{KEY:1})
+
+En esta práctica ocultaremos el campo _id y especialidad de la colección médicos.
+
+
+esta es la sintaxis para ocultar el campo especialidad y _id de la colección médicos
+db.getCollection('medicos').find({},{especialidad:0,_id:0})

@@ -1,0 +1,25 @@
+Aplicaciones de la comunicacion serial
+
+La comunicacion serial se utiliza para adquisición de datos, control, depuración de código, entre otros.
+
+Los proyecyos que mayormente utilizan la comunicaion serial son los que integran Sistemas embebidos.
+
+En las imagenes de abajo podemos ver el montaje de un arduino micro y una tarjeta que se usa para controlar el arduino
+a travez de un puerto usb.
+
+
+
+Estos sistemas no requieren un hosting y responden directamente a los datos recibidos a través de sus puertos
+de entrada. Ejemplos de estos son los hornos de microondas.
+
+
+Los sistemas que producen una salida requerida en un período de tiempo particular se conocen como sistemas integrados 
+en tiempo real.
+
+
+Integran el monitoreo de los sistemas embebidos a través de un navegador web. Usado ampliamente en aplicaciones de 
+monitoreo industrial y médico.
+
+
+Los teléfonos celulares, las cámaras digitales y los reproductores de mp3 son solo algunos ejemplos de sistemas
+ integrados móviles

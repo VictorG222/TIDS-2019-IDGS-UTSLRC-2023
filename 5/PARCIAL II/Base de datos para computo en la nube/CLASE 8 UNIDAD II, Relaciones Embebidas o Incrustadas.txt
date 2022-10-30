@@ -1,0 +1,58 @@
+Las relaciones en MongoDB representan cómo varios documentos se relacionan lógicamente entre sí. Las relaciones se pueden modelar a través de enfoques incrustados y referenciados . Estas relaciones pueden ser 1: 1, 1: N, N: 1 o N: N.
+Consideremos el caso de almacenar direcciones para usuarios. Por lo tanto, un usuario puede tener varias direcciones, por lo que esta es una relación 1: N.
+A continuación se muestra la estructura del documento usuario :
+
+
+{ 
+  "_id":ObjectId("52ffc33cd85242f436000001"), 
+  "name": "Tom Hanks", 
+  "contact": "987654321", 
+  "dob": "01-01-1991"
+
+}
+A continuación se muestra la estructura del documento dirección :
+{ 
+  "_id":ObjectId("52ffc4a5d85242602e000000"), 
+  "building": "22 A, Indiana Apt", 
+  "pincode": 123456,
+
+   "city": "Los Angeles", 
+  "state": "California" 
+}
+Modelado de relaciones embebidas o incrustadas
+Ahora incrustaremos el documento de dirección dentro del documento del usuario.
+
+
+Crear una base de datos llamada walmart
+crear una colección llamada usuarios
+agregar el siguiente documento embebido  (CAPTURA DE PANTALLA)
+
+
+{ 
+  "_id":ObjectId("52ffc33cd85242f436000001"), 
+  "contact": "987654321", 
+  "dob": "01-01-1991", 
+  "name": "Sergio Amillano",    (incluye tu nombre aquí) 
+  "address": [ 
+         { 
+          "building": "22 A, Indiana Apt", 
+          "pincode": 123456, 
+           "city": "Los Angeles", 
+           "state": "California"
+
+         }, 
+        { 
+         "building": "170 A, Acropolis Apt", 
+        "pincode": 456789, 
+        "city": "Chicago",  
+        "state": "Illinois" 
+        }
+
+  ] 
+}
+
+Este enfoque mantiene todos los datos relacionados en un solo documento, lo que facilita su recuperación y mantenimiento. 
+Con la siguiente consulta podemos recuperar las dos direcciones embebidas, haciendo proyección en el campo  address:1
+db.users.findOne({"name":"Sergio Amillano"},{"address":1})
+
+Realizar dicha consulta y mostrar la SEGUNDA captura de pantalla

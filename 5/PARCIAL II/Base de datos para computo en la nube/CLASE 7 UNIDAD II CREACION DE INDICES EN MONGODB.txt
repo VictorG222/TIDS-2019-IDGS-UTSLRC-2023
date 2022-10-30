@@ -1,0 +1,23 @@
+Los índices apoyan la resolución eficiente de consultas. Sin índices, MongoDB debe escanear todos los documentos de una colección para seleccionar aquellos documentos que coincidan con la declaración de consulta. Este análisis es muy ineficiente y requiere que MongoDB procese un gran volumen de datos.
+Los índices son estructuras de datos especiales que almacenan una pequeña parte del conjunto de datos en una forma fácil de recorrer. El índice almacena el valor de un campo específico o un conjunto de campos, ordenados por el valor del campo como se especifica en el índice.
+
+El método createIndex ()
+Para crear un índice, debe usar el método createIndex () de MongoDB.
+
+Sintaxis
+La sintaxis básica del método createIndex () es la siguiente ().
+db.COLLECTION_NAME.createIndex({KEY:1})
+
+Aquí la clave es el nombre del campo en el que desea crear el índice y 1 es para el orden ascendente. Para crear un índice en orden descendente, debe usar -1.
+
+
+Ejemplo:
+db.mycol.createIndex({"title":1})
+
+
+En el método createIndex () puede pasar varios campos para crear un índice en varios campos.
+db.mycol.createIndex({"title":1,"description":-1})
+
+En este caso nos enfocaremos en la base de datos escuela, colección cursos, donde agregaremos un índice al titulo de los cursos, te dejo una captura de pantalla para que veas como debe agregarse el índice y como se muestra la información una vez agregado, además tu también deberás agregar tu captura de pantalla.
+
+la siguiente clase estaremos viendo como hacer consultas usando los índices.

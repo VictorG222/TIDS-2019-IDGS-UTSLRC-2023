@@ -1,0 +1,9 @@
+Para ordenar documentos en MongoDB, debe usar el método sort () . El método acepta un documento que contiene una lista de campos junto con su orden de clasificación. Para especificar el orden de clasificación se utilizan 1 y -1. 1 se usa para orden ascendente mientras que -1 se usa para orden descendente.
+
+La sintaxis básica del método sort () es la siguiente:
+db.COLLECTION_NAME.find().sort({KEY:1})
+
+
+De la clase anterior, la clase 5 donde la base de datos se llama cursos aplicaremos una ordenación de datos por titulo de forma descendente.
+con la siguiente sintaxis:
+db.cursos.find({},{"title":1,"alumno":1,"_id":0}).sort({"title":-1})

@@ -1,0 +1,34 @@
+{
+    "_id" : ObjectId("60c275e47d24b89c80f29d25"),
+    "nombre" : "Victor",
+    "apellido" : "Galvan",
+    "email" : "galvan@gmail.com",
+    "teletonos" : {
+        "cel" : 653156589,
+        "tel" : 538965446
+        },
+    "activo" : true,
+    "techa de regiscro" : "10/06/2021"
+}
+
+
+user = {
+    "nombre" : "",
+    "apellido" : "",
+    "email" : "@gmail.com",
+    "teletonos" : {
+        "cel" : 653156589,
+        "tel" : 538965446
+        },
+    "activo" : true,
+    "techa de regiscro" : "10/06/2021"
+}
+
+
+db.users.find({"_id" : ObjectId("60c275e47d24b89c80f29d25")})
+
+db.users.update({'nombre':'Victor'}, {$set:{'nombre': 'Manuel'}})
+
+db.users.update({'nombre':'Manuel'}, {$set:{'nombre': 'Victor', "password": "123654"}})
+
+db.users.remove({"_id" : ObjectId("60c27809fa9d3b17e4f821c5")})

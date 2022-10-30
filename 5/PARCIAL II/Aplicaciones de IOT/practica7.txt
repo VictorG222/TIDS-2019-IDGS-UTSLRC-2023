@@ -1,0 +1,68 @@
+#Practica 7 Isaac Sanchez Gutierrez TI 5-3
+import RPi.GPIO as GPIO
+import time
+from datetime import datetime
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+
+servo = 11
+trig = 10
+echo = 12
+GPIO.setup(servo, GPIO.OUT)
+GPIO.setup(trig, GPIO.OUT)
+GPIO.setup(echo, GPIO.IN)
+
+
+p = GPIO.PWM(servo, 50)
+p.start(2.5)
+
+print("\n")
+print("|---------------------- Sensor de Distancia Con servomotor ------------------------|")
+print("____________________________________________________________________________________")
+print("|   Fecha            |      Hora      |      Distancia       |   Posicion Servo    |")
+print("------------------------------------------------------------------------------------")
+
+try:
+	while True:
+		GPIO.output(trig,GPIO.LOW)
+		time.sleep(0.5)
+		
+		GPIO.output(trig,GPIO.HIGH)
+		time.sleep(0.00001)
+		GPIO.output(trig,GPIO.LOW)
+
+		inicio = time.time()
+		while GPIO.input(echo)==0:
+			inicio = time.time()
+		
+		while GPIO.input(echo)==1:
+			final = time.time() 
+
+		tiempo_transcurrido = final - inicio
+
+		duracion = tiempo_transcurrido*34000
+		distancia = duracion/2
+		if distancia > 0 and distancia < 5 :
+			print("|",datetime.today().strftime('%Y-%m-%d'), "|", datetime.today().strftime('%H:%M:%S'),
+			"|", round(distancia,2) ,"cm" , "      |", "Servo a 0 grados")
+			p.ChangeDutyCycle(2.5) # posicion 0 grados
+			time.sleep(1)
+		elif distancia > 5 and distancia < 10 :
+			print("|",datetime.today().strftime('%Y-%m-%d'), "|", datetime.today().strftime('%H:%M:%S'),
+			"|", round(distancia,2) ,"cm" , "      |", "Servo a 90 grados")
+			p.ChangeDutyCycle(7.5) # posicion 90 grados
+			time.sleep(1)
+		elif distancia > 10 and distancia < 15 :
+			print("|",datetime.today().strftime('%Y-%m-%d'), "|", datetime.today().strftime('%H:%M:%S'),
+			"|", round(distancia,2) ,"cm" , "     |", "Servo a 180 grados")
+			p.ChangeDutyCycle(12.5) # posicion 180 grados
+			time.sleep(1)
+		else:
+			print("|",datetime.today().strftime('%Y-%m-%d'), "|", datetime.today().strftime('%H:%M:%S'),
+			"|","Fuera de rango", "|", "Servo a 0 grados")
+			p.ChangeDutyCycle(2.5) # posicion 0 grados
+			time.sleep(1)
+			
+except KeyboardInterrupt:
+	GPIO.cleanup()
