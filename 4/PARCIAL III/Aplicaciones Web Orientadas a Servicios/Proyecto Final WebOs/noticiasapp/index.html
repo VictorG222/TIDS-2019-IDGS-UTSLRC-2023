@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<title>Login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+
+
+body {
+	background-color: #4a61d4;
+}
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #999;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #f2f3f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #5cb85c;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}  
+.img-circle{
+	width: 50%;
+}
+</style>
+</head>
+<body class="" style="overflow: hidden;">
+<div class="signup-form">
+    <form  method="post">	
+        <br>
+		<h2 style="font-size: 20px;">Inicia sesión</h2>
+        <div class="text-center">
+            <img src="assets/news.png" class="img-circle" alt="breaking news" >
+		</div>
+		<br></br>
+		<p class="hint-text">Crea tu cuenta. Es gratis y solo toma un momento.</p>
+		<p class="hint-text">¡Consulta noticias al instante!</p>
+        <div class="form-group">
+			<div class="row">
+				<input id="correo_electronico" type="text" class="form-control" name="correo_electronico" placeholder="Correo Electronico" required=>
+            	<input id="contraseña" type="password" class="form-control" name="password" placeholder="Contraseña" required>
+			</div>
+		<br>
+		<div class="text-center">
+			<div id="error"></div>
+		</div>
+		<div class="form-group">
+            <button id="button" type="submit" class="btn btn-success btn-lg btn-block">Registrate ahora!</button>
+        </div>
+        <br>
+        <div class="text-center">
+		<div class="or-seperator"><i>o</i></div>
+		<p class="text-center">Inicia sesión con tu cuenta de Facebook</p>
+ 
+		  
+		<div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=750238182580625&autoLogAppEvents=1" nonce="PUY5LXVC"></script>
+        <div class="text-center social-btn">
+            <div scope="public_profile,email" onlogin="checkLoginState();" class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" ></div>
+            <div id="status">
+            </div>
+        </div>    
+		
+
+		<br>
+    	</form>
+		<div class="text-center">¿No tienes una cuenta?<a href="Registro.php"> ¡Crea una aqui!</a></div>
+
+        
+</div>			
+</body>
+<script>
+	$("#button").click(function(){ 
+	
+		var correo_electronico = document.getElementById('correo_electronico').value;
+		var contraseña = document.getElementById('contraseña').value;
+
+		if (correo_electronico == "" || contraseña == ""){
+                $("#error").text("Favor de llenar los campos");
+                $("#error").css("color","red");
+        }
+		else{
+				$.post("controller/controller_login.php",
+					{
+						correo_electronico: correo_electronico,
+						contraseña: contraseña,   
+					},
+					function(data,status){
+							
+						//alert(data);
+						var correo = document.getElementById('correo_electronico').value;
+						window.location.replace("Home.php?usuario=" + correo);
+					});
+			    }   
+	
+	});
+
+	function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+			  console.log('statusChangeCallback');
+			  console.log(response);                   // The current login status of the person.
+			  if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+				testAPI();  
+			  } else {                                 // Not logged into your webpage or we are unable to tell.
+				document.getElementById('status').innerHTML = 'Please log ' +
+				  'into this webpage.';
+			  }
+			}
+		  
+		  
+			function checkLoginState() {               // Called when a person is finished with the Login Button.
+			  FB.getLoginStatus(function(response) {   // See the onlogin handler
+				statusChangeCallback(response);
+			  });
+			}
+		  
+		  
+			window.fbAsyncInit = function() {
+			  FB.init({
+				appId      : '1885679824934136',
+				cookie     : true,                     // Enable cookies to allow the server to access the session.
+				xfbml      : true,                     // Parse social plugins on this webpage.
+				version    : 'v10.0'           // Use this Graph API version for this call.
+			  });
+		  
+		  
+			  FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+				statusChangeCallback(response);        // Returns the login status.
+			  });
+			};
+		   
+			function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+			  console.log('Welcome!  Fetching your information.... ');
+			  FB.api('/me', function(response) {
+				console.log('Successful login for: ' + response.name);				
+				document.getElementById('status').innerHTML =
+				  'Gracias por iniciar sesion, ' + response.name + '!';
+				  	
+			  });
+			}
+
+		  function testAPI() {
+    		FB.api('/me', {fields: 'name, email'}, function(response) {
+				console.log( response );
+				$.post("controller/controller_login_facebook.php",
+					{
+						correo_electronico: response.email,
+						
+					},
+					function(data,status){
+						if (data=="true"){
+							window.location.replace("Home.php");
+							var correo = response.email;
+							window.location.replace("Home.php?usuario=" + correo);
+						}else{
+							alert("Lo sentimos usuario no encontrado");
+						}
+							
+					});
+    		});
+}
+</script>
+  
+
+</html>

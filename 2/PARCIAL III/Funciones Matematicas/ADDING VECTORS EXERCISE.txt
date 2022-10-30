@@ -1,0 +1,11 @@
+3.2 VECCTORS
+HW#3 - Tabla medidas Escalares y Vectoriales
+HW#4 - ADDING VECTORS
+
+ADD THE VECTORS a= (8,13) and b= (-10, 10)
+
+ADD THE VECTORS c= (33,-40) and d= ( 5, 5)
+
+ADD THE VECTORS e= (-70,-12) and f= (-3,-7)
+
+ADD THE VECTORS a= (13,8) and b= (26,7)

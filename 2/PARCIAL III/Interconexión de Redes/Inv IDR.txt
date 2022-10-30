@@ -1,0 +1,4 @@
+Redes conmutadas
+Entorno de una red conmutada.
+Identificar los dominios en la conmutación de tramas.
+Identificar los métodos de conmutación del switch.

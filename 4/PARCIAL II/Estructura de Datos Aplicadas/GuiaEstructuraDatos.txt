@@ -1,0 +1,55 @@
+#Programa que crea un arreglo a partir de numeros aleatorios
+import array as arr
+import random
+mi_arreglo=arr.array("i",[])
+pares=arr.array("i",[])
+multi3=arr.array("i",[])
+num=int(input("Proporciona un numero mayor que 50 pero menor que 100: "))
+for j in range (num):
+	mi_arreglo.append(random.randint(1,num))
+
+#Determinar cuantos numeros pares hay en el arreglo
+for i in range(len(mi_arreglo)):
+	if mi_arreglo[i]%2==0:
+		pares.append(mi_arreglo[i])
+#Determine los multiplos de 3
+for k in range(len(mi_arreglo)):
+	if mi_arreglo[k]%3==0:
+		multi3.append(mi_arreglo[k])
+#Determine cuantos numeros primos hay en el arreglo
+#Tarea para el Miercoles
+#El numero primo solo es divisible entre 1 y el mismo
+
+
+print("Arreglo generado aleatoriamente: ",mi_arreglo)
+print("Numeros pares encontrados en el arreglo: ",pares)
+print("Numeros que son multiplos de 3 en el arreglo: ",multi3)
+
+
+
+#definir una clase para el manejo de las pilas tomando como base una lista
+class Stack:
+#El Metodo constructor
+	def __init__(self):
+		self.lista=[]
+#Metodo para determinar si la pila esta vacia
+	def isEmpty(self):
+		return self.lista==[]
+#Metodo para apilar elementos en un pila
+	def push(self,item):
+	self.lista.append(item)
+#Metodo para desapilar en una pila
+	def pop(self):
+	self.lista.pop()
+#Metodo para mostrar todo los elementos de una pila
+	def fullStack(self):
+	return self.lista
+#Metodo para mostrar el elemento que esta en el tope
+	def peek(self):
+	return self.lista[-1]
+#Metodo para mostrar el tamaño de mi pila
+	def size(self):
+		return len(self.lista)
+#Metodo para buscar un elemento en la pila
+# 	def searchItem(self,item):
+#

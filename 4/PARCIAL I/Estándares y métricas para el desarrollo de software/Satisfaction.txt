@@ -1,0 +1,33 @@
+Esta cualidad se refiere a la capacidad del software desarrollado para satisfacer a los usuarios
+obviamente en base a un marco de trabajo particular es decir, para que ambito laboral fue creado el software mismo,
+puede ser finanzas, inventario, educacion, aprendizaje, diseño, ect. ect.,
+entendiendo la satisfacción como la respuesta de los usuarios cuando interacctuan con el mismo software, 
+incluyendo la actitud presentada por el usuario al momento de usarlo....
+Esta contento, esta enojado, esta desesperado, esta confundido serian unos ejemplos
+
+MÉTRICA DE SATISFACCIÓN
+La métrica de satisfacción evalúa las actitudes del usuario hacia el uso del software en un contexto de uso especifico.  
+tomando en cuenta que la satisfacción está influenciada por la percepción que tiene el usuario de las propiedades del producto del software
+y por la percepción del usuario de la efectividad, productividad e integridad en uso. 
+
+El modelo de desarrollo y utilización del cuestionario de satisfacción del cliente está basado en una metodología de proceso en fases.
+Cada una de estas fases contiene pasos concretos, y cada uno de ellos se centra en un elemento importante para la compresión y las opiniones de los clientes.
+
+
+El primer paso de la metodología es identificar las exigencias de los clientes o las
+dimensiones de la calidad, siendo estas las características importantes del software. 
+
+En el segundo el objetivo final es desarrollar un cuestionario que permita la valoración 
+de una información concreta sobre las percepciones de sus clientes. 
+
+El tercer paso es utilizar el cuestionario. Representa los diversos usos
+específicos de los cuestionarios de satisfacción del cliente. Los mismos van desde la
+identificación del estado actual de la satisfacción del cliente, hasta la evaluación de la
+satisfacción del cliente a lo largo del tiempo. Es decir evaluar su satisfaccion de un usuario
+ que ha utilizado el software pocas horas, has uno que lleva meses trabajando con el. 
+
+
+Para concluir vamos a dar un pequeño ejemplo:
+Hablando en el ambito de la educacion hay muchos sistemas que ofrecen o facilitan la educacion online
+facilmente podriamos utilizar la metrica de satisfaccion en cada uno de estos sistemas y documentar 
+la satisfaccion de los dos principales usuarios, es decir la satisfaccion del estudiante y la del maestro.

@@ -1,0 +1,115 @@
+<?php 
+	if(!isset   ($_COOKIE['sesion'])){
+        header("location: index.php");
+	}
+
+	if($_COOKIE['sesion'] != "token"){ 
+        header("location: index.php");
+        
+	}
+
+	if(!isset($_REQUEST['usuario'])){
+		header("location: index.php");
+	}
+
+  
+?>
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+<style>
+body {
+ background-image: url("assets/2.png");
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+body {
+  overflow: visible;
+}
+</style>
+<div class="row">
+    <div class="col-sm-2">
+      <img src="assets/1.gif" class="img-swuare" alt="breaking news" >
+    </div>
+
+    <div class="col-sm-8">    
+          <?php 
+            $conexion=mysqli_connect('localhost','root','root','noticias');
+            $correo_electronico = $_REQUEST['usuario'];	
+            $sql="CALL web_sp_usuariolist('$correo_electronico')";
+            $result=mysqli_query($conexion,$sql);
+            while($mostrar=mysqli_fetch_array($result)){
+          ?>
+
+          
+                <div  style="background-color: #f04651;">
+                        
+                  <div class="text-center">
+                    <h2 style="color:white;">¡Bienvenido!</h2> 
+                  <h1 id="nombre" style="color:white; font-size: 80px;"><?php echo $mostrar['nombre_completo'] ?></h1>
+                  <br>
+                  <p style="color:white;">¡¡¡Estas son las ultimas noticias para ti que tenemos para ti!!!</p>  
+                
+            <?php 
+                  }
+            ?>     
+    </div>
+    <div class="text-center">
+
+        <a href="index.php" class="btn btn-info btn-lg" style="Background-Color: Red; width: 100% ">
+          <span class="glyphicon glyphicon-log-out"></span> Cerrar sesión
+        </a>
+    </div>
+</div>
+
+
+
+<?php
+              $url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=12dadae87ccd4c9c96ae513174641a7d';
+              $response = file_get_contents($url);
+              $NewsData = json_decode($response);
+            ?>
+            <?php
+              foreach($NewsData->articles as $News){
+            ?>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-3">
+                <img src="<?php echo $News->urlToImage ?>" alt="News thumbnail" style="width: 100%;">
+            </div>
+            <div class="col-md-9">
+                                <h2 style="color: yellow;"><?php echo $News->title?>"</h2>
+                                <h5  style="color: white;"><?php echo $News->description?>"</h2>
+                                <p  style="color: white;"><?php echo $News->content?>"</p>
+                                <h6  style="color: white;"><?php echo $News->author?>"</h6>
+                                <h6  style="color: white;"><?php echo $News->publishedAt?>"</h6>
+            </div>
+            </div>
+            </div>
+            <?php
+            }
+            ?>
+
+  </body>
+  <script>
+            $("#button").click(function(){
+                    window.location.replace("index.php");                
+                });
+  </script>
+  </html>

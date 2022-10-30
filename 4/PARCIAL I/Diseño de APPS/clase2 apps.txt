@@ -1,0 +1,14 @@
+// edad de una perosna
+void main(){
+  int edad = 121;
+  
+  if (edad >= 18 && edad <= 120) {
+    print('Tu eres mayor de edad');
+  } else if (edad < 18 && edad > 0){
+    print('Tu eres menor de edad');
+  } else if (edad <= 0 || edad > 120) {
+    print('La edad no esta en el rango permitido');
+  } else {
+    print('Error');
+  }
+}

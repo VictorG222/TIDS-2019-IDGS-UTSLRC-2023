@@ -1,0 +1,1 @@
+SELECT * FROM ventas2020.usuarios;

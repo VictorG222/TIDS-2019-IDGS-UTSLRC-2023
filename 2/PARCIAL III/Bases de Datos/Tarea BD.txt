@@ -1,0 +1,14 @@
+research work "joins"research work "joins"
+
+document structure:
+what is a join used for?
+describes the different types of joins:
+inner join
+left join
+right join
+full join
+Note: send it in PDF format,IN ENGLISH.
+
+jueves 13 multiconsultas
+martes 18 ejercicio y repaso
+jueves 20 evaluacion parcial

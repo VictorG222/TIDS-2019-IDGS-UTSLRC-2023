@@ -1,0 +1,29 @@
+Criterios
+Criterios de evaluación parcial 2
+Aquí les dejo los nombres de las actividades y los 
+valores de cada una una de ellas, recuerden que esto solo es para su 70% del 100%
+
+Nombre-Valor
+restricciones de integridad 10
+formas y características 10
+formas normales 10
+glosario 15
+mi primer query 20
+participación 5
+
+Ojo: si no han enviado alguna de las tareas que no sea 
+la que vale 20, traten de enviarla esta semana,porque si no las entregan se verán reflejadas en su calificación.
+
+Enviado por: ARIADNA ALEJANDRA DERBEZ VILLEGAS
+Prioridad: Normal
+
+Criterios de evaluación
+restricciones de integridad 10
+formas y características 10
+formas normales 10
+desafió 5
+glosario 15
+mi primer query 20
+evaluacion teorica 15
+evaluación practica 15
+La evaluación es el día jueves 9/07/20 (los dos 15)

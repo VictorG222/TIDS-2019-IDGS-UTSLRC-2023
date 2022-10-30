@@ -1,0 +1,97 @@
+Practica 4 TI 4-3 Victor Galvan
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarning(False)
+
+pul = 12
+GPIO.setup(pul, GPIO.IN)
+
+try:
+	while True:
+		estado = GPIO.input(pul)
+		if estado == 1:
+			print("Pulsador presionado")
+			time.sleep(1)
+		else:
+			print("Pulsador no presionado")
+			time.sleep(1)
+
+except KeyboardInterrupt:
+	GPIO.cleanup()
+
+
+
+
+
+
+
+Practica 5 TI 4-3 Victor Galvan
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarning(False)
+
+pul = 12
+led = 8
+
+GPIO.setup(pul, GPIO.IN)
+GPIO.setup(led, GPIO.OUT)
+
+
+try:
+	while True:
+		estado = GPIO.input(pul)
+		if estado == 1:
+			GPIO.output(led, GPIO.HIGH)	
+			print("Led encendido")
+			time.sleep(1)
+		else:
+			GPIO.output(led, GPIO.LOW)	
+			print("Led apagado")
+			time.sleep(1)
+
+except KeyboardInterrupt:
+	GPIO.cleanup()
+
+
+
+
+
+
+
+
+
+
+
+Practica 6 TI 4-3 Victor Galvan
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarning(False)
+
+pul = 12
+pul1 = 32
+led = 8
+
+GPIO.setup(pul, GPIO.IN)
+GPIO.setup(pul1, GPIO.IN)
+GPIO.setup(led, GPIO.OUT)
+
+
+try:
+	while True:
+		if GPIO.input(pul) == 1:
+			GPIO.output(led, GPIO.HIGH)	
+			print("Led encendido")
+			time.sleep(1)
+		elif GPIO.input(pul1) == 1:
+			GPIO.output(led, GPIO.LOW)	
+			print("Led apagado")
+			time.sleep(1)
+
+except KeyboardInterrupt:
+	GPIO.cleanup()
