@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"fcbc58045f1541f49661edfdb9ac8729","collectionName":"matricula","type":"collection"}

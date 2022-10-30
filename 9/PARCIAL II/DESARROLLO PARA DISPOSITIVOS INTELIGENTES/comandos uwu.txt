@@ -1,0 +1,7 @@
+cd C:\Users\acer\AppData\Local\Android\Sdk\platform-tools
+adb devices
+adb tcpip 5555
+adb connect LAIPDELCELULAR:5555
+adb kill-server
+
+adb connect 192.168.137.76:5555

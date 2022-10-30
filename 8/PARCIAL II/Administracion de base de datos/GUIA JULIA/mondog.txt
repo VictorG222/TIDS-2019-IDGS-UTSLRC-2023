@@ -1,0 +1,129 @@
+show dbs
+use NOMBRE_BASE_DE_DATOS
+db
+db.NOMBRE_COLECCION.insert({'DATO_1': 'VALOR_DATO_1', })
+db.NOMBRE_COLECCION.insert({'DATO_1': 'VALOR_DATO_1', 'DATO_2': 'VALOR_DATO_2', 'DATO_2': 'VALOR_DATO_2'})
+
+db.NOMBRE_COLECCION.find()
+
+
+db.NOMBRE_COLECCION.drop()
+
+db.dropDatabase()
+
+
+db.coleccion.insert({'': '', })
+Formato JSON
+{   '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+}
+
+------------------------BASE DE DATOS 1 ---------------------------------------------
+use fabrica
+------------------------1 DATO | COLECCION 1
+db.empleado.insert({'nombre': 'Luis Colosio', })
+------------------------3 DATO | COLECCION 1
+db.empleado.insert({'nombre': 'Jose Colosio', 'peso': '85', 'edad': '40'})
+------------------------2 DATO | COLECCION 2
+db.gerente.insert({'nombre': 'Juan Perez', 'puesto': 'Recursos Humanos',})
+------------------------5 DATO | COLECCION 2
+db.gerente.insert({'nombre': 'Lion Garcia', 'puesto': 'Ventas', 'edad': '50', 'altura': '167', 'genero': 'Masculino', })
+------------------------1 DATO | COLECCION 3
+db.departamento.insert({'nombre': 'Produccion', })
+------------------------3 DATO | COLECCION 4
+db.horario.insert({'entrada': '8', 'salida': '5', 'activo': 'True',})
+------------------------3 DATO | COLECCION 5
+db.automovil.insert({'tipo': 'carga', 'condicion': 'buena', 'ocupado': 'False',})
+------------------------6 DATO | COLECCION 5
+db.automovil.insert({'tipo': 'ventas', 'condicion': 'mala', 'ocupado': 'False', 'reparacion': 'True', 'kilometraje': '150,0000', 'activo': 'False',})
+
+
+------------------------BASE DE DATOS 2 ---------------------------------------------
+use carpinteria
+------------------------2 DATO | COLECCION 1
+db.material.insert({'nombre': 'tabla', 'inventario': '512', })
+------------------------1 DATO | COLECCION 2
+db.cliente.insert({'nombre': 'Dico', })
+------------------------3 DATO | COLECCION 2
+db.cliente.insert({'nombre': 'Coppel', 'direccion': 'Avenida Nuevo Leon, Calle No. 22', 'activo': 'True',})
+------------------------1 DATO | COLECCION 3
+db.mueble.insert({'nombre': 'silla', })
+------------------------2 DATO | COLECCION 3
+db.mueble.insert({'nombre': 'mesa', 'tiempo_de_elaboracion_horas': '7', })
+------------------------1 DATO | COLECCION 4
+db.empleado.insert({'clave': '265594', })
+------------------------2 DATO | COLECCION 4
+db.empleado.insert({'clave': '981356', 'apellido': 'Ruiz',})
+
+
+------------------------BASE DE DATOS 3 ---------------------------------------------
+use peliculas
+------------------------3 DATO | COLECCION 1
+db.generos.insert({'nombre': 'Ciencia ficcion', '': '', 'nivel': '3', })
+------------------------1 DATO | COLECCION 2
+db.presupuesto.insert({'final': '$150,000,000.00', })
+------------------------2 DATO | COLECCION 2
+db.presupuesto.insert({'inicial': '$50,000,000.00', 'final': '$100,000,000.00',})
+------------------------3 DATO | COLECCION 3
+db.recaudacion.insert({'enero': '$25,000,000.00', 'febrero': '$23,000,000.00', 'marzo': '$15,000,000.00', })
+------------------------4 DATO | COLECCION 3
+db.recaudacion.insert({'enero': '$50,000,000.00', 'febrero': '$47,000,000.00', 'marzo': '$32,000,000.00', 'abril': '$28,000,000.00', })
+------------------------5 DATO | COLECCION 4
+db.actores.insert({'nombre': 'Michel Cera', 'genero': 'Masculino', 'numero_de_peliculas_hechas': '43', 'edad': '34', 'estatus': 'Activo', })
+------------------------3 DATO | COLECCION 4
+db.actores.insert({'nombre': 'Jim Carrey', 'numero_de_peliculas_hechas': '120', 'estatus': 'Activo', })
+
+
+
+
+----------------------codigo sin comentarios-----------------------
+
+use fabrica
+db.empleado.insert({'nombre': 'Luis Colosio', })
+db.empleado.insert({'nombre': 'Jose Colosio', 'peso': '85', 'edad': '40'})
+db.gerente.insert({'nombre': 'Juan Perez', 'puesto': 'Recursos Humanos',})
+db.gerente.insert({'nombre': 'Lion Garcia', 'puesto': 'Ventas', 'edad': '50', 'altura': '167', 'genero': 'Masculino', })
+db.departamento.insert({'nombre': 'Produccion', })
+db.horario.insert({'entrada': '8', 'salida': '5', 'activo': 'True',})
+db.automovil.insert({'tipo': 'carga', 'condicion': 'buena', 'ocupado': 'False',})
+db.automovil.insert({'tipo': 'ventas', 'condicion': 'mala', 'ocupado': 'False', 'reparacion': 'True', 'kilometraje': '150,0000', 'activo': 'False',})
+
+use carpinteria
+db.material.insert({'nombre': 'tabla', 'inventario': '512', })
+db.cliente.insert({'nombre': 'Dico', })
+db.cliente.insert({'nombre': 'Coppel', 'direccion': 'Avenida Nuevo Leon, Calle No. 22', 'activo': 'True',})
+db.mueble.insert({'nombre': 'silla', })
+db.mueble.insert({'nombre': 'mesa', 'tiempo_de_elaboracion_horas': '7', })
+db.empleado.insert({'clave': '265594', })
+db.empleado.insert({'clave': '981356', 'apellido': 'Ruiz',})
+
+use peliculas
+db.generos.insert({'nombre': 'Ciencia ficcion', 'clasificacion': 'PG-13', 'nivel': '3', })
+db.presupuesto.insert({'final': '$150,000,000.00', })
+db.presupuesto.insert({'inicial': '$50,000,000.00', 'final': '$100,000,000.00',})
+db.recaudacion.insert({'enero': '$25,000,000.00', 'febrero': '$23,000,000.00', 'marzo': '$15,000,000.00', })
+db.recaudacion.insert({'enero': '$50,000,000.00', 'febrero': '$47,000,000.00', 'marzo': '$32,000,000.00', 'abril': '$28,000,000.00', })
+db.actores.insert({'nombre': 'Michel Cera', 'genero': 'Masculino', 'numero_de_peliculas_hechas': '43', 'edad': '34', 'estatus': 'Activo', })
+db.actores.insert({'nombre': 'Jim Carrey', 'numero_de_peliculas_hechas': '120', 'estatus': 'Activo', })
+
+
+
+cd C:\Users\acer\Desktop\sql\mongoRES
+mongodump
+db.dropDatabase()
+mongorestore
+
+
+mongodump --db peliculas
+db.dropDatabase()
+mongorestore --db peliculas dump/peliculas
+
+
+mongodump
+db.actores.drop()
+mongorestore --db peliculas --collection actores dump/peliculas/actores.bson

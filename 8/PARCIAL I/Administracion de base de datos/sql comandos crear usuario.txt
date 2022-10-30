@@ -1,0 +1,50 @@
+Administracion de seguridad en base de datos relacionales
+
+como se crea
+
+	CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
+otorgar privilegios
+
+	grant all privileges on *.* to 'newuser'@'localhost';
+	grant select, isernt on *.* to 'newuser'@'localhost';
+todos los privilegios
+
+	flush privileges;
+
+select user from mysql.user;
+show grants for 'newuser'@'localhost';
+
+
+
+
+
+PRIVILEGIOS
+
+	ALL PRIVILEGES (todo)
+	CREATE (crear)
+	DROP (tirar)
+	DELETE
+	INSERT
+	SELECT
+	UPDATE
+	GRANT OPTION
+
+
+SINTAXIS PARA OTORGAR ALGUN PRIVILEGIO EN ESPECIFICO A UN USARIO
+	GRANT ty[e
+
+SINTAXIS PARA REVOCAR ALGUN PRIVILEGIO EN ESPECIFICO A UN USARIO
+
+
+
+
+
+----------------------PRACTICA-----------------------------
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin>
+create user 'victor'@'localhost' identfied by '123654';
+grant select, insert on * . * to 'victor'@'localhost';
+flush privileges;
+select user from mysql.user;
+show grants for 'victor'@'localhost';
+

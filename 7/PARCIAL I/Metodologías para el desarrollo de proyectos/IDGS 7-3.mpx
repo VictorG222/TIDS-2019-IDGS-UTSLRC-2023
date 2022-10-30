@@ -1,0 +1,108 @@
+MPX,Microsoft Project for Windows,4.0,ANSI
+10,$,1,2,.,","
+11,2,0,1,"8,00","40,00","$10,00/h","$15,00/h",1,0
+12,1,1,480,/,:,am,pm,20,20
+20,Standard,0,1,1,1,1,1,0
+25,1
+25,2,08:00,12:00,13:00,17:00
+25,3,08:00,12:00,13:00,17:00
+25,4,08:00,12:00,13:00,17:00
+25,5,08:00,12:00,13:00,17:00
+25,6,08:00,12:00,13:00,17:00
+25,7
+30,Project1,,,Standard,01/12/2021,15/03/2022,0,04/02/2022,,"$0,00","$0,00","$0,00",0h,0h,0h,0%,0d,0d,0d,0%,,,,,0d,0d
+60,Nombre,WBS,Nivel de Esquema,Costo,Duración,Duración Real,Duración Restante,% Completado,Comienzo,Fin,Predecesoras,Fijo,Hito,ID,Tipo de Restricción,Prioridad,ID Único,Número de Esquema,Summary
+61,1,2,3,30,40,42,43,44,50,51,70,80,81,90,91,95,98,99,120
+70,,0,0,,105d,,,,01/12/2021,15/03/2022,,No,,0,Lo antes posible,,0,0
+70,ETAPAS ADMINISTRATIVAS,1,1,"$0,00",33d,0d,33d,0%,28/01/2022,15/03/2022,,No,No,1,Lo antes posible,Media,1,1,Sí­
+70,PLANEACIÓN,1.1,2,"$0,00",14d,0d,14d,0%,28/01/2022,16/02/2022,,No,No,2,Lo antes posible,Media,2,1.1,Sí­
+70,Licitación / Solicitud,1.1.1,3,"$0,00",7d,0d,7d,0%,28/01/2022,07/02/2022,,No,No,3,Lo antes posible,Media,7,1.1.1,Sí­
+70,Entrevista,1.1.1.1,4,"$0,00",2d,0d,2d,0%,28/01/2022,31/01/2022,,No,No,4,Lo antes posible,Media,8,1.1.1.1
+70,Análisis de estimación de tiempos y costos,1.1.1.2,4,"$0,00",2d,0d,2d,0%,01/02/2022,02/02/2022,,No,No,5,Lo antes posible,Media,9,1.1.1.2
+70,Presentación de presupuestos,1.1.1.3,4,"$0,00",3d,0d,3d,0%,03/02/2022,07/02/2022,,No,No,6,Lo antes posible,Media,10,1.1.1.3
+70,Aceptación de presupuesto,1.1.2,3,"$0,00",3d,0d,3d,0%,08/02/2022,10/02/2022,3,No,No,7,Lo antes posible,Media,11,1.1.2,Sí­
+70,"Contratos, clausulas y penalizaciones",1.1.2.1,4,"$0,00",3d,0d,3d,0%,08/02/2022,10/02/2022,,No,No,8,Lo antes posible,Media,12,1.1.2.1
+70,Plan de administración,1.1.3,3,"$0,00",2d,0d,2d,0%,11/02/2022,14/02/2022,7,No,No,9,Lo antes posible,Media,13,1.1.3,Sí­
+70,Plan Tecnológico,1.1.3.1,4,"$0,00",2d,0d,2d,0%,11/02/2022,14/02/2022,,No,No,10,Lo antes posible,Media,14,1.1.3.1
+70,Plan de Riesgos,1.1.3.2,4,"$0,00",2d,0d,2d,0%,11/02/2022,14/02/2022,,No,No,11,Lo antes posible,Media,15,1.1.3.2
+70,Plan de Comunicación,1.1.3.3,4,"$0,00",2d,0d,2d,0%,11/02/2022,14/02/2022,,No,No,12,Lo antes posible,Media,16,1.1.3.3
+70,Plan de Capacitación,1.1.3.4,4,"$0,00",2d,0d,2d,0%,11/02/2022,14/02/2022,,No,No,13,Lo antes posible,Media,17,1.1.3.4
+70,Adquisición de mobiliario y equipo de trabajo,1.1.4,3,"$0,00",2d,0d,2d,0%,15/02/2022,16/02/2022,9,No,No,14,Lo antes posible,Media,18,1.1.4
+70,ORGANIZACIÓN,1.2,2,"$0,00",7d,0d,7d,0%,17/02/2022,25/02/2022,2,No,No,15,Lo antes posible,Media,3,1.2,Sí­
+70,Contratación del personal,1.2.1,3,"$0,00",1d,0d,1d,0%,17/02/2022,17/02/2022,,No,No,16,Lo antes posible,Media,19,1.2.1
+70,Estructura de desglose de trabajo – EDT (WBS),1.2.2,3,"$0,00",1d,0d,1d,0%,18/02/2022,18/02/2022,16,No,No,17,Lo antes posible,Media,20,1.2.2,Sí­
+70,Matriz de responsabilidades,1.2.2.1,4,"$0,00",1d,0d,1d,0%,18/02/2022,18/02/2022,,No,No,18,Lo antes posible,Media,21,1.2.2.1
+70,Selección del modelo de desarrollo del software,1.2.3,3,"$0,00",1d,0d,1d,0%,21/02/2022,21/02/2022,18,No,No,19,Lo antes posible,Media,22,1.2.3
+70,Revisión y autorización del ERS,1.2.4,3,"$0,00",1d,0d,1d,0%,22/02/2022,22/02/2022,19,No,No,20,Lo antes posible,Media,23,1.2.4
+70,Diagrama de Gantt,1.2.5,3,"$0,00",1d,0d,1d,0%,23/02/2022,23/02/2022,20,No,No,21,Lo antes posible,Media,24,1.2.5
+70,Acta de inicio del proyecto,1.2.6,3,"$0,00",1d,0d,1d,0%,24/02/2022,24/02/2022,21,No,No,22,Lo antes posible,Media,25,1.2.6
+70,Acta de cierre del proyecto,1.2.7,3,"$0,00",1d,0d,1d,0%,25/02/2022,25/02/2022,22,No,No,23,Lo antes posible,Media,26,1.2.7
+70,CONTROL,1.3,2,"$0,00",12d,0d,12d,0%,28/02/2022,15/03/2022,15,No,No,24,Lo antes posible,Media,6,1.3,Sí­
+70,Implementación del modelo de desarrollo del software,1.3.1,3,"$0,00",3d,0d,3d,0%,28/02/2022,02/03/2022,,No,No,25,Lo antes posible,Media,27,1.3.1
+70,Juntas de trabajo con staff (cada que se requiera),1.3.2,3,"$0,00",9d,0d,9d,0%,03/03/2022,15/03/2022,25,No,No,26,Lo antes posible,Media,42,1.3.2
+70,DIRECCIÓN,1.4,2,"$0,00",12d,0d,12d,0%,28/02/2022,15/03/2022,,No,No,27,Lo antes posible,Media,5,1.4,Sí­
+70,Juntas de status del proyecto,1.4.1,3,"$0,00",12d,0d,12d,0%,28/02/2022,15/03/2022,,No,No,28,Lo antes posible,Media,29,1.4.1,Sí­
+70,Administración - Staff (1 x mes),1.4.1.1,4,"$0,00",6d,0d,6d,0%,28/02/2022,07/03/2022,,No,No,29,Lo antes posible,Media,30,1.4.1.1
+70,Administración – Cliente (cada que sea necesario),1.4.1.2,4,"$0,00",6d,0d,6d,0%,08/03/2022,15/03/2022,29,No,No,30,Lo antes posible,Media,32,1.4.1.2
+70,Registro de avances del proyecto,1.4.2,3,"$0,00",7d,0d,7d,0%,28/02/2022,08/03/2022,,No,No,31,Lo antes posible,Media,36,1.4.2,Sí­
+70,Revisión de reportes de estado del proyecto (1 x semana),1.4.2.1,4,"$0,00",3d,0d,3d,0%,28/02/2022,02/03/2022,,No,No,32,Lo antes posible,Media,37,1.4.2.1
+70,Revisión de reportes de estado del prototipo (1 x mes),1.4.2.2,4,"$0,00",4d,0d,4d,0%,03/03/2022,08/03/2022,32,No,No,33,Lo antes posible,Media,38,1.4.2.2
+70,Reajustes al plan original,1.4.3,3,"$0,00",2d,0d,2d,0%,09/03/2022,10/03/2022,33,No,No,34,Lo antes posible,Media,39,1.4.3
+70,Gestión del presupuesto del proyecto,1.4.4,3,"$0,00",2d,0d,2d,0%,11/03/2022,14/03/2022,34,No,No,35,Lo antes posible,Media,40,1.4.4
+70,Análisis del rendimiento del staff,1.4.5,3,"$0,00",1d,0d,1d,0%,15/03/2022,15/03/2022,35,No,No,36,Lo antes posible,Media,41,1.4.5
+70,ETAPAS DE DESARROLLO,2,1,"$0,00",53d,0d,53d,0%,01/12/2021,11/02/2022,,No,No,37,Lo antes posible,Media,43,2,Sí­
+70,ANALISIS,2.1,2,"$0,00",49d,0d,49d,0%,01/12/2021,07/02/2022,,No,No,38,Lo antes posible,Media,65,2.1,Sí­
+70,Recolección de datos,2.1.1,3,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,39,Lo antes posible,Media,64,2.1.1,Sí­
+70,Entrevista,2.1.1.1,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,40,Lo antes posible,Media,66,2.1.1.1
+70,Observación,2.1.1.2,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,41,Lo antes posible,Media,67,2.1.1.2
+70,D. Modelo de negocios,2.1.1.3,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,42,Lo antes posible,Media,68,2.1.1.3
+70,E. Stakeholders,2.1.1.4,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,43,Lo antes posible,Media,69,2.1.1.4
+70,E.R.S.,2.1.2,3,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,44,Lo antes posible,Media,70,2.1.2,Sí­
+70,Objetivos y alcances,2.1.2.1,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,45,Lo antes posible,Media,71,2.1.2.1
+70,Requerimientos NO Funcionales,2.1.2.2,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,46,Lo antes posible,Media,72,2.1.2.2
+70,Requerimientos Funcionales,2.1.2.3,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,47,Lo antes posible,Media,73,2.1.2.3
+70,Diagramas,2.1.3,3,"$0,00",49d,0d,49d,0%,01/12/2021,07/02/2022,,No,No,48,Lo antes posible,Media,74,2.1.3,Sí­
+70,D. Casos de Uso,2.1.3.1,4,"$0,00",1d,0d,1d,0%,07/02/2022,07/02/2022,,No,No,49,Lo antes posible,Media,75,2.1.3.1
+70,D. Componentes,2.1.3.2,4,"$0,00",1d,0d,1d,0%,01/12/2021,01/12/2021,,No,No,50,Lo antes posible,Media,76,2.1.3.2
+70,D. Secuencia,2.1.3.3,4,"$0,00",1d,0d,1d,0%,01/12/2021,01/12/2021,,No,No,51,Lo antes posible,Media,78,2.1.3.3
+70,D. Colaboración,2.1.3.4,4,"$0,00",1d,0d,1d,0%,01/12/2021,01/12/2021,,No,No,52,Lo antes posible,Media,79,2.1.3.4
+70,D. Clases,2.1.3.5,4,"$0,00",1d,0d,1d,0%,01/12/2021,01/12/2021,,No,No,53,Lo antes posible,Media,80,2.1.3.5
+70,DISEÑO,2.2,2,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,38,No,No,54,Lo antes posible,Media,81,2.2,Sí­
+70,Diseño de imagenes,2.2.1,3,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,,No,No,55,Lo antes posible,Media,82,2.2.1,Sí­
+70,Imagenes corporativas,2.2.1.1,4,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,,No,No,56,Lo antes posible,Media,83,2.2.1.1
+70,Fotografía,2.2.1.2,4,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,,No,No,57,Lo antes posible,Media,84,2.2.1.2
+70,Diseño Front End app Web,2.2.2,3,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,,No,No,58,Lo antes posible,Media,85,2.2.2
+70,Diseño Front End app móvil,2.2.3,3,"$0,00",1d,0d,1d,0%,08/02/2022,08/02/2022,,No,No,59,Lo antes posible,Media,86,2.2.3
+70,CODIFICACIÓN,2.3,2,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,54,No,No,60,Lo antes posible,Media,87,2.3,Sí­
+70,Programación,2.3.1,3,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,61,Lo antes posible,Media,88,2.3.1,Sí­
+70,Front End (web y/o móvil),2.3.1.1,4,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,62,Lo antes posible,Media,89,2.3.1.1
+70,Back End (web y/o móvil),2.3.1.2,4,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,63,Lo antes posible,Media,90,2.3.1.2
+70,Prototipado,2.3.1.3,4,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,64,Lo antes posible,Media,91,2.3.1.3
+70,Base de Datos,2.3.2,3,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,65,Lo antes posible,Media,92,2.3.2,Sí­
+70,Diseño Tablas,2.3.2.1,4,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,66,Lo antes posible,Media,93,2.3.2.1
+70,BD a servidor,2.3.2.2,4,"$0,00",1d,0d,1d,0%,09/02/2022,09/02/2022,,No,No,67,Lo antes posible,Media,94,2.3.2.2
+70,PRUEBAS,2.4,2,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,60,No,No,68,Lo antes posible,Media,109,2.4,Sí­
+70,Recolección de datos,2.4.1,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,69,Lo antes posible,Media,98,2.4.1
+70,ERS,2.4.2,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,70,Lo antes posible,Media,99,2.4.2
+70,Diagramas,2.4.3,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,71,Lo antes posible,Media,100,2.4.3
+70,Diseño de imagenes,2.4.4,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,72,Lo antes posible,Media,101,2.4.4
+70,Diseño Front End Web,2.4.5,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,73,Lo antes posible,Media,102,2.4.5
+70,Diseño Front End móvil,2.4.6,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,74,Lo antes posible,Media,103,2.4.6
+70,Programación,2.4.7,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,75,Lo antes posible,Media,104,2.4.7
+70,Base de datos,2.4.8,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,76,Lo antes posible,Media,105,2.4.8
+70,Documentación,2.4.9,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,77,Lo antes posible,Media,106,2.4.9
+70,Capacitación,2.4.10,3,"$0,00",1d,0d,1d,0%,10/02/2022,10/02/2022,,No,No,78,Lo antes posible,Media,107,2.4.10
+70,IMPLEMENTACIÓN,2.5,2,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,68,No,No,79,Lo antes posible,Media,110,2.5,Sí­
+70,Instalaciones,2.5.1,3,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,80,Lo antes posible,Media,111,2.5.1,Sí­
+70,Adecuación del entorno,2.5.1.1,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,81,Lo antes posible,Media,112,2.5.1.1
+70,Instalación de red,2.5.1.2,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,82,Lo antes posible,Media,113,2.5.1.2
+70,Instalacion app servidor,2.5.1.3,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,83,Lo antes posible,Media,114,2.5.1.3
+70,Base de datos a server,2.5.1.4,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,84,Lo antes posible,Media,115,2.5.1.4
+70,Enlaces de BD a servidor,2.5.1.5,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,85,Lo antes posible,Media,116,2.5.1.5
+70,Prototipo en red,2.5.1.6,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,86,Lo antes posible,Media,117,2.5.1.6
+70,Capacitación,2.5.2,3,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,87,Lo antes posible,Media,118,2.5.2,Sí­
+70,Elaboración de curso,2.5.2.1,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,88,Lo antes posible,Media,119,2.5.2.1
+70,Capacitación de usuarios,2.5.2.2,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,89,Lo antes posible,Media,120,2.5.2.2
+70,Juntas de estado,2.5.3,3,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,90,Lo antes posible,Media,121,2.5.3,Sí­
+70,Clientes-Staff 1,2.5.3.1,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,91,Lo antes posible,Media,122,2.5.3.1
+70,Staff - Directivos,2.5.3.2,4,"$0,00",1d,0d,1d,0%,11/02/2022,11/02/2022,,No,No,92,Lo antes posible,Media,123,2.5.3.2

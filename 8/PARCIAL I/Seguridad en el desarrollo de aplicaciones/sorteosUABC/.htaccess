@@ -1,0 +1,12 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sorteosuabc.mx [NC]
+RewriteRule ^(.*)$ https://www.sorteosuabc.mx/$1 [L,R=301]
+
+ErrorDocument 404 /404.php
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</IfModule>
+

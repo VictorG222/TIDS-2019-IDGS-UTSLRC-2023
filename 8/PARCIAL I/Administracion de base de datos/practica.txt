@@ -1,0 +1,92 @@
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+mysql -u root
+
+CREATE DATABASE universidad_ut;
+CREATE DATABASE universidad_2022_2;
+USE universidad_ut;
+
+CREATE TABLE `universidad_ut`.`alumnos` (
+  `idalumno` INT(10) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `correo_electronico` VARCHAR(100) NOT NULL,
+  `contrasenia` VARCHAR(12) NOT NULL,
+  PRIMARY KEY (`idalumno`));
+
+CREATE TABLE `universidad_ut`.`calificaciones` (
+  `id` INT(10) NOT NULL AUTO_INCREMENT,
+  `valor` VARCHAR(5) NOT NULL,
+  `alumno` INT(5) NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+
+
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('Q', '1@gmail.com', '1');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('W', '2@gmail.com', '2');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('E', '3@gmail.com', '3');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('R', '4@gmail.com', '4');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('T', '5@gmail.com', '5');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('Y', '6@gmail.com', '6');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('U', '7@gmail.com', '7');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('I', '8@gmail.com', '8');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('O', '9@gmail.com', '9');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('P', '10@gmail.com', '10');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('A', '11@gmail.com', '11');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('S', '12@gmail.com', '12');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('D', '13@gmail.com', '13');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('F', '14@gmail.com', '14');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('G', '15@gmail.com', '15');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('H', '16@gmail.com', '16');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('I', '17@gmail.com', '17');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('J', '18@gmail.com', '18');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('K', '19@gmail.com', '19');
+INSERT INTO `universidad_ut`.`alumnos` (`name`, `correo_electronico`, `contrasenia`) VALUES ('L', '20@gmail.com', '20');
+
+
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 1);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 2);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 3);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 4);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 5);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 6);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 7);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 8);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 9);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 10);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 11);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 12);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 13);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 14);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 15);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 16);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 17);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 18);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 19);
+INSERT INTO `universidad_ut`.`calificaciones` (`valor`, `alumno`) VALUES ('AU', 20);
+
+
+
+create user 'benny'@'localhost' identified by 'yes';
+grant select, delete on `universidad_ut`.* to 'benny'@'localhost';
+grant all privileges on `universidad_2022_2`.* to 'benny'@'localhost';
+select user from mysql.user;
+show grants for 'benny'@'localhost';
+USE universidad_2022_2;
+SHOW TABLES;
+exit
+
+
+
+mysqldump --single-transaction -u benny -p universidad_ut > C:\Users\acer\Desktop\sql\copia_ut.sql
+
+mysql -u benny -p universidad_2022_2 < C:\Users\acer\Desktop\sql\copia_ut.sql
+
+mysql -u benny -p
+USE universidad_2022_2;
+SHOW TABLES;
+SELECT * FROM alumnos;
+SELECT * FROM calificaciones;
+
+
+drop user 'benny'@'localhost';

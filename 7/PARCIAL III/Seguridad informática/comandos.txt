@@ -1,0 +1,56 @@
+CLASE 1
+
+dmitry fruteriawelton.com
+
+que es un dns
+Es la capa que traduce el dominio y lo transforma en la ip
+
+dnsnum fruteriawelton.com
+
+pwd
+ls
+git clone 
+cd KnockPy
+ls-lh
+python knock.py yahoo.com
+
+conseguir las compuertas del servidor
+nmap 192.168.36.54
+nmap -sV 192.168.36.54
+
+nmap -sV 192.168.36.54 -oN fuentes.txt
+
+
+
+CLASE 2
+
+nmap --script=vuln ++IP++
+
+Para chear info de instagram
+https://github.com/Datalux/Osintgram
+
+
+para checar la locacion mediante la ip o dominio
+https://github.com/maldevel/IPGeoLocation
+
+mkdir hack
+git clone 
+
+touch index.txt
+
+mkdir hack && cd hack && touch index.html
+comandos consecutivos
+
+
+git clone https://github.com/maldevel/IPGeoLocation
+
+apt-get install python3-setuptools
+easy_install3 pip
+pip3 install -r requirements.txt
+
+
+chmod +x ipgeolocation.py
+
+/ipgeolocation.py -t ++DOMINIO O IP++
+
+

@@ -1,0 +1,15 @@
+php --version
+composer --version
+
+
+composer create-project laravel/laravel back
+
+php artisan serve
+
+php artisan make:controller AlumnosController
+php artisan make:model Usuario
+php artisan make:migration UsuarioMigration
+php artisan make:migration create_usuarios_table
+php artisan migrate
+php artisan migrate:fresh
+php artisan make:model Producto -mcr

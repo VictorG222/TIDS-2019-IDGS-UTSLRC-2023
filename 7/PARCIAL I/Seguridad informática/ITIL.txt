@@ -1,0 +1,44 @@
+Muy buenas tardes nuestra presentacion es hacerca de la 
+guia de buenas practicas llamada ITIL o tambien conocida
+como Information Technology Infrastructure Library
+sin abreviar
+
+Presentacion ITIL
+
+
+-Diapositova---11111111
+Vamos a empezar definiendo que es ITIL
+
+ITIL es una guía de buenas prácticas para la gestión de servicios de 
+tecnologías de la información (TI). La guía ITIL ha sido elaborada 
+para abarcar toda la infraestructura, desarrollo y operaciones de 
+TI y gestionarla hacia la mejora de la calidad del servicio.
+
+
+
+-Diapositova---22222222
+ITIL es empleado en diferentes practicas como vemos a continuacion
+
+Prácticas generales de gestión: estratégica, gestión de riesgos y 
+de la mejora continua.
+Prácticas de gestión de servicios: Diseño / Transición / Operación 
+del Servicio y Service Desk.
+Prácticas técnicas: modelos de servicios en la nube.
+
+
+
+
+-Diapositova---33333333
+Y para cada una de estas practicas que mencione anteriormente en
+ITIL se consideran cuatro dimensiones o parametros que tenemos
+que tener en consideracion 
+
+Organización y personas, a través de una cultura y competencias 
+corporativas.
+Información y tecnología, entendido como el conocimiento y la 
+información existentes.
+Proveedores y socios, aquellas partes interesadas directamente
+involucradas en el servicio.
+Flujos de valor y procesos, creación de valor a través de la 
+integración de todas las partes de la organización.
+

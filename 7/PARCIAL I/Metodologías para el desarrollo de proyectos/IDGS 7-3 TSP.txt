@@ -1,0 +1,49 @@
+Las desventajas de este modelo es que es necesario que 
+cada uno de los miembros tiene que tener el compromiso y 
+la disciplina de seguir el plan. 
+Debe de llenar toda la documentación requerida que incluye
+sus registros, planificación, las plantillas o formularios. 
+
+Se debe de contar con un buen conjunto 
+de métricas y parámetros de calidad, lo cual, para algunas 
+organizaciones, puede ser difícil de definir. Cada miembro debe 
+de estar entrenado en el PSP, si algún miembro se va, es necesario 
+entrenar a los nuevos miembros.
+
+Algo que puede resultar una desventaja 
+importante es que la Gerencia debe de dejar trabajar a los equipos 
+de trabajo autodirigidos de acuerdo a sus planes, algo que no muchos resisten.
+
+
+Los miembros tiene que tener el compromiso y la disciplina de seguir el plan.
+
+Debe de llenar toda la documentación requerida. 
+
+Se debe de contar con un buen conjunto de métricas y parámetros de calidad.
+
+Cada miembro debe de estar entrenado en el PSP.
+
+
+Que tal muy buenas tardes, a continuacion nuestro equipo 
+conformado por Fernando Osuna, Sebastian Cazares, Tania Yescas
+y yo Victor Galvan presentaremos el tema Team Software Proces
+
+
+
+
+
+A continuacion en las desventajas del TSP nos encontramos
+Primeramente con que todos los miembros del equipo deben 
+contar con el compromiso y la disciplina de seguir el plan
+establecido por los formatos del TSP
+
+Tambien se debe de llenar toda la documentacion
+necesaria para obeter buenos resultados
+
+Despues observamos que debemos contar con un buen
+conjunto de metricas y parametros de calidad
+
+
+Y por ultimo tenemos que todos los miembros parte 
+del equipo deben estar previamente capacitados en el
+PSP ya que es un requerimiento para las ceritificacion TSP

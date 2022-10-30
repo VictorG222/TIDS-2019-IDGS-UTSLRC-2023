@@ -1,0 +1,4 @@
+Breadcrumbs:
+Son una buena manera de mostrar su ubicacion actual.
+Esto generalmente se utiliza cuando se tienen varias capas de contenido.
+Ayuda a mantener informado al usuario sobre su localizacion dentro de la estructurra jerarquíca.

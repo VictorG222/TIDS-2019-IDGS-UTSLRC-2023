@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Framework de gestor de proyectos y framework tecnologico" company="UTSLRC" webLink="http://" view-date="2022-01-17" view-index="0" gantt-divider-location="1185" resource-divider-location="300" version="2.8.11" locale="es">
+    <description><![CDATA[Nombre del alumno: Victor Manuel Galvan Covarrubias
+Diagrama de Gantt para planeación del proyecto SIG-FM1.0
+Modelo en Cascada]]></description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="470" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="348" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="348" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="ETAPAS ADMINISTRATIVAS" color="#8cb6ce" meeting="false" start="2022-01-28" duration="33" complete="0" thirdDate="2022-01-31" thirdDate-constraint="0" expand="true">
+            <task id="2" name="1.PLANEACIÓN" color="#000000" meeting="false" start="2022-01-28" duration="14" complete="0" thirdDate="2022-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+                <task id="7" name="1.1.Licitación / Solicitud" color="#000000" meeting="false" start="2022-01-28" duration="7" complete="0" thirdDate="2022-01-28" thirdDate-constraint="0" expand="true">
+                    <depend id="11" type="2" difference="0" hardness="Strong"/>
+                    <task id="8" name="1.1.1.Entrevista" color="#8cb6ce" meeting="false" start="2022-01-28" duration="2" complete="0" thirdDate="2022-01-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="9" name="1.1.2.Análisis de estimación de tiempos y costos" color="#8cb6ce" meeting="false" start="2022-02-03" duration="3" complete="0" thirdDate="2022-02-01" thirdDate-constraint="0" expand="true">
+                        <task id="10" name="1.1.3.Presentación de presupuestos" color="#8cb6ce" meeting="false" start="2022-02-03" duration="3" complete="0" thirdDate="2022-02-03" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                </task>
+                <task id="11" name="1.2.Aceptación de presupuesto" color="#000000" meeting="false" start="2022-02-08" duration="3" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                    <task id="12" name="1.2.1.Contratos, clausulas y penalizaciones" meeting="false" start="2022-02-08" duration="3" complete="0" expand="true"/>
+                </task>
+                <task id="13" name="1.3.Plan de administración" meeting="false" start="2022-02-11" duration="2" complete="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                    <task id="14" name="1.3.1.Plan Tecnológico" color="#8cb6ce" meeting="false" start="2022-02-11" duration="2" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="15" name="1.3.2.Plan de Riesgos" meeting="false" start="2022-02-11" duration="2" complete="0" expand="true"/>
+                    <task id="16" name="1.3.3.Plan de Comunicación" color="#8cb6ce" meeting="false" start="2022-02-11" duration="2" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="17" name="1.3.4.Plan de Capacitación" meeting="false" start="2022-02-11" duration="2" complete="0" expand="true"/>
+                </task>
+                <task id="18" name="1.4.Adquisición de mobiliario y equipo de trabajo" meeting="false" start="2022-02-15" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="3" name="2.ORGANIZACIÓN" color="#8cb6ce" meeting="false" start="2022-02-17" duration="7" complete="0" thirdDate="2022-01-31" thirdDate-constraint="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+                <task id="19" name="2.1.Contratación del personal" color="#8cb6ce" meeting="false" start="2022-02-17" duration="1" complete="0" thirdDate="2022-02-17" thirdDate-constraint="0" expand="true">
+                    <depend id="20" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="20" name="2.2.Estructura de desglose de trabajo – EDT (WBS)" meeting="false" start="2022-02-18" duration="1" complete="0" expand="true">
+                    <task id="21" name="2.2.1.Matriz de responsabilidades" color="#8cb6ce" meeting="false" start="2022-02-18" duration="1" complete="0" thirdDate="2022-02-18" thirdDate-constraint="0" expand="true">
+                        <depend id="22" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="22" name="2.3.Selección del modelo de desarrollo del software" meeting="false" start="2022-02-21" duration="1" complete="0" expand="true">
+                    <depend id="23" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="23" name="2.4.Revisión y autorización del ERS" color="#8cb6ce" meeting="false" start="2022-02-22" duration="1" complete="0" thirdDate="2022-02-22" thirdDate-constraint="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" name="2.5.Diagrama de Gantt" color="#8cb6ce" meeting="false" start="2022-02-23" duration="1" complete="0" thirdDate="2022-02-23" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="2.6.Acta de inicio del proyecto" color="#8cb6ce" meeting="false" start="2022-02-24" duration="1" complete="0" thirdDate="2022-02-24" thirdDate-constraint="0" expand="true">
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" name="2.7Acta de cierre del proyecto" color="#8cb6ce" meeting="false" start="2022-02-25" duration="1" complete="0" thirdDate="2022-02-25" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="6" name="3.CONTROL" color="#000000" meeting="false" start="2022-02-28" duration="12" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <task id="27" name="3.1.Implementación del modelo de desarrollo del software" color="#8cb6ce" meeting="false" start="2022-02-28" duration="3" complete="0" thirdDate="2022-01-28" thirdDate-constraint="0" expand="true">
+                    <depend id="42" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="42" name="3.2.Juntas de trabajo con staff (cada que se requiera)" meeting="false" start="2022-03-03" duration="9" complete="0" expand="true"/>
+            </task>
+            <task id="5" name="4.DIRECCIÓN" color="#000000" meeting="false" start="2022-02-28" duration="12" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <task id="29" name="4.1.Juntas de status del proyecto" meeting="false" start="2022-02-28" duration="12" complete="0" expand="true">
+                    <task id="30" name="4.1.1.Administración - Staff (1 x mes)" color="#8cb6ce" meeting="false" start="2022-02-28" duration="6" complete="0" thirdDate="2022-01-28" thirdDate-constraint="0" expand="true">
+                        <depend id="32" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="32" name="4.1.2.Administración – Cliente (cada que sea necesario)" meeting="false" start="2022-03-08" duration="6" complete="0" expand="true"/>
+                </task>
+                <task id="36" name="4.2.Registro de avances del proyecto" meeting="false" start="2022-02-28" duration="7" complete="0" expand="true">
+                    <task id="37" name="4.2.1.Revisión de reportes de estado del proyecto (1 x semana)" color="#8cb6ce" meeting="false" start="2022-02-28" duration="3" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                        <depend id="38" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="38" name="4.2.2.Revisión de reportes de estado del prototipo (1 x mes)" meeting="false" start="2022-03-03" duration="4" complete="0" expand="true">
+                        <depend id="39" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="39" name="4.3.Reajustes al plan original" color="#8cb6ce" meeting="false" start="2022-03-09" duration="2" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true">
+                    <depend id="40" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="40" name="4.4.Gestión del presupuesto del proyecto" color="#8cb6ce" meeting="false" start="2022-03-11" duration="2" complete="0" thirdDate="2022-03-11" thirdDate-constraint="0" expand="true">
+                    <depend id="41" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="41" name="4.5.Análisis del rendimiento del staff" color="#8cb6ce" meeting="false" start="2022-03-15" duration="1" complete="0" thirdDate="2022-03-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="43" name="ETAPAS DE DESARROLLO" color="#8cb6ce" meeting="false" start="2021-12-01" duration="53" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true">
+            <task id="65" name="5.ANALISIS" color="#000000" meeting="false" start="2021-12-01" duration="49" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
+                <task id="64" name="5.1.Recolección de datos" color="#000000" meeting="false" start="2021-12-20" duration="36" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true">
+                    <task id="66" name="5.1.1.Entrevista" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="67" name="5.1.2.Observación" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="68" name="5.1.3. D. Modelo de negocios" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="69" name="5.1.4. E. Stakeholders" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="172" name="5.1.5.Levantamiento de requerimientos" meeting="false" start="2021-12-20" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="70" name="5.2.E.R.S." color="#000000" meeting="false" start="2021-12-20" duration="36" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true">
+                    <task id="71" name="5.2.1.Objetivos y alcances" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="72" name="5.2.2.Requerimientos NO Funcionales" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="73" name="5.2.3.Requerimientos Funcionales" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="173" name="5.2.4.Limitantes" meeting="false" start="2021-12-20" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="74" name="5.3.Diagramas" color="#000000" meeting="false" start="2021-12-01" duration="49" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <task id="75" name="5.3.1. D. Casos de Uso" color="#8cb6ce" meeting="false" start="2022-02-07" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="76" name="5.3.2. D. Componentes" color="#8cb6ce" meeting="false" start="2021-12-01" duration="1" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true"/>
+                    <task id="78" name="5.3.3. D. Secuencia" meeting="false" start="2021-12-01" duration="1" complete="0" expand="true"/>
+                    <task id="79" name="5.3.4. D. Colaboración" meeting="false" start="2021-12-01" duration="1" complete="0" expand="true"/>
+                    <task id="80" name="5.3.5. D. Clases" meeting="false" start="2021-12-01" duration="1" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="81" name="6.DISEÑO" color="#000000" meeting="false" start="2022-02-08" duration="1" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true">
+                <depend id="87" type="2" difference="0" hardness="Strong"/>
+                <task id="82" name="6.1.Diseño de imagenes" color="#000000" meeting="false" start="2022-02-08" duration="1" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true">
+                    <task id="83" name="6.1.1.Imagenes corporativas" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                    <task id="84" name="6.1.2.Fotografía" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                    <task id="175" name="6.1.3.Selección de tipografía" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                    <task id="177" name="6.1.4.Diseño de producto" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="85" name="6.2.Diseño Front End app Web" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                <task id="86" name="6.3.Diseño Front End app móvil" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                <task id="179" name="6.4.MockUps" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true">
+                    <task id="181" name="6.4.1.Diseño interactivo en Figma" meeting="false" start="2022-02-08" duration="1" complete="0" expand="true"/>
+                    <task id="183" name="6.5.2.Reunión de avance" color="#8cb6ce" meeting="false" start="2022-02-08" duration="1" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="185" name="6.5.WireFrame" color="#8cb6ce" meeting="false" start="2022-02-08" duration="1" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true">
+                    <task id="187" name="6.5.1.Organización de módulos" color="#8cb6ce" meeting="false" start="2022-02-08" duration="1" complete="0" thirdDate="2022-02-08" thirdDate-constraint="0" expand="true"/>
+                </task>
+            </task>
+            <task id="87" name="7.CODIFICACIÓN" color="#000000" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true">
+                <depend id="109" type="2" difference="0" hardness="Strong"/>
+                <task id="88" name="7.1.Programación" meeting="false" start="2022-02-09" duration="1" complete="0" expand="true">
+                    <task id="89" name="7.1.1.Front End (web y/o móvil)" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                    <task id="90" name="7.1.2.Back End (web y/o móvil)" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true">
+                        <task id="194" name="7.1.2.1.Requisitos de &#9;&#9;software" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                        <task id="196" name="7.1.2.2.Requisitos de &#9;&#9;hardware" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                        <task id="198" name="7.1.2.3.Requisitos del &#9;&#9;modelo de trabajo" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                        <task id="200" name="7.1.2.4.Pruebas constantes &#9;&#9;al funcionamiento del &#9;&#9;backend" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                        <task id="202" name="7.1.2.5.Verificación de &#9;&#9;funcionalidad deseada" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                    <task id="91" name="7.1.3.Prototipado" meeting="false" start="2022-02-09" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="92" name="7.2.Base de Datos" color="#000000" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true">
+                    <task id="93" name="7.2.1.Diseño Tablas" meeting="false" start="2022-02-09" duration="1" complete="0" expand="true"/>
+                    <task id="94" name="7.2.2.BD a servidor" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true"/>
+                    <task id="209" name="7.2.3.Organización de datos" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                    <task id="211" name="7.2.4.Modelar la base de datos en software" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                    <task id="213" name="7.2.5.Introducción de datos a la base de datos" color="#8cb6ce" meeting="false" start="2022-02-09" duration="1" complete="0" thirdDate="2022-02-09" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="192" name="7.1.4.Despliegue" meeting="false" start="2022-02-09" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="109" name="8.PRUEBAS" color="#000000" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true">
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+                <task id="98" name="8.1.Recolección de datos" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="99" name="8.2.ERS" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="100" name="8.3.Diagramas" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="101" name="8.4.Diseño de imagenes" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="102" name="8.5.Diseño Front End Web" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="103" name="8.6.Diseño Front End móvil" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="104" name="8.7.Programación" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="105" name="8.8.Base de datos" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="106" name="8.9.Documentación" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2022-02-10" thirdDate-constraint="0" expand="true"/>
+                <task id="107" name="8.10.Capacitación" color="#8cb6ce" meeting="false" start="2022-02-10" duration="1" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="110" name="9.IMPLEMENTACIÓN" color="#000000" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true">
+                <task id="111" name="9.1.Instalaciones" color="#000000" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true">
+                    <task id="112" name="9.1.1.Adecuación del entorno" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="113" name="9.1.2.Instalación de red" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="114" name="9.1.3.Instalacion app servidor" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="115" name="9.1.4.Base de datos a server" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="116" name="9.1.5.Enlaces de BD a servidor" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="117" name="9.1.6.Prototipo en red" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="118" name="9.2.Capacitación" color="#000000" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true">
+                    <task id="119" name="9.2.1.Elaboración de curso" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="120" name="9.2.2.Capacitación de usuarios" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="121" name="9.3.Juntas de estado" color="#000000" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true">
+                    <task id="122" name="9.3.Clientes-Staff 1" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                    <task id="123" name="9.4.Staff - Directivos" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-02-11" thirdDate-constraint="0" expand="true"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

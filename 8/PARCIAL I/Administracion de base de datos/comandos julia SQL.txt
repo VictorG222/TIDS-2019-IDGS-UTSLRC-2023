@@ -1,0 +1,70 @@
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+mysqldump -u root -p DB > "raiz" \nombredelarchivo.sql"
+mysqldump -u root -p master_clinician > C:\Users\acer\Desktop\sql\clinian_copy.sql
+
+mysql -u root -p
+mysql> use DB;
+mysql> show tables;
+SELECT * FROM tabla;
+DROP DATABASE NomDB;
+
+------------------------------Practica Base de Datos------------------------------
+
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+mysql -u root -p
+mysql> show databases;
+mysql> use si;
+mysql> show tables;
+mysql> SELECT * FROM log;
+mysqldump -u root -p si> C:\Users\acer\Desktop\sql\si_copy.sql (crea copia)
+mysql> DROP DATABASE si;
+mysql -u root -p si< C:\Users\acer\Desktop\sql\si_copy.sql (carga copia)
+
+
+------------------------------Practica Tabla------------------------------
+
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+mysql -u root -p
+mysql> show databases;
+mysql> use si;
+mysql> show tables;
+mysql> SELECT * FROM log;
+mysqldump -u root -p si log> C:\Users\acer\Desktop\sql\log.sql (crea copia)
+mysql> DROP DATABASE si;
+mysql -u root -p si< C:\Users\acer\Desktop\sql\log.sql (carga copia)
+
+mysqldump -u root -p si admin user> C:\Users\acer\Desktop\sql\tablas.sql (crea copia)
+mysql -u root -p si< C:\Users\acer\Desktop\sql\tablas.sql (carga copia)
+
+------------------------------Practica Tabla------------------------------
+
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+mysqldump -u root -p -h localhost -P 3306 si admin user> C:\Users\acer\Desktop\sql\tablas.sql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

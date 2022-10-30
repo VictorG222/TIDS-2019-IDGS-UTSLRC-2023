@@ -1,0 +1,201 @@
+-------------------------------------PRACTICA 3--------------------------------------
+---------------------4 bases de datos con 8 registros cada una-----------------------
+
+use biblicoteca
+db.titulo.insertMany([{'1': 'El principito'},
+            {'2': 'La torre oscura'},
+            {'3': 'Eragon'},
+            {'4': 'Harry Potter'},
+            {'5': 'El alquimista'},
+            {'6': 'Luna de pluton'},
+            {'7': 'Hyperion'},
+            {'8': 'La fundacion'},])
+db.isbn.insertMany([{'1': '849-3-55-516155-8'},
+            {'2': '849-7-54-527845-8'},
+            {'3': '849-4-45-548565-8'},
+            {'4': '849-2-78-515795-8'},
+            {'5': '849-2-69-519555-8'},
+            {'6': '849-8-89-516515-8'},
+            {'7': '849-0-78-545615-8'},
+            {'8': '849-9-23-532135-8'},])
+db.fecha_de_publicacion.insertMany([{'1': '2000-01-01'},
+            {'2': '2001-01-01'},
+            {'3': '2002-01-01'},
+            {'4': '2003-01-01'},
+            {'5': '2004-01-01'},
+            {'6': '2005-01-01'},
+            {'7': '2006-01-01'},
+            {'8': '2007-01-01'},])
+db.autor.insertMany([{'1': 'Isaac Asimov'},
+            {'2': 'Paulo Cohelo'},
+            {'3': 'JK Rowling'},
+            {'4': 'David Rivera'},
+            {'5': 'Christopher Paolini'},
+            {'6': 'Stephen King'},
+            {'7': 'Antoine de Saint-Exupéry'},
+            {'8': 'Dan Simmons'},])
+db.categoria.insertMany([{'1': 'Terror'},
+            {'2': 'Suspenso'},
+            {'3': 'Fantasia'},
+            {'4': 'Comedia'},
+            {'5': 'Ciencia Ficcion'},
+            {'6': 'Ciencia'},
+            {'7': 'Matematicas'},
+            {'8': 'Lenguaje'},])
+
+use hospital
+db.nombre.insertMany([{'1': 'Tamara Murillo'},
+            {'2': 'Nayra Calle'},
+            {'3': 'Macarena Rueda'},
+            {'4': 'Anibal Bermejo'},
+            {'5': 'Jose-Luis Buendia'},
+            {'6': 'Mary Montoro'},
+            {'7': 'Amaya Candela'},
+            {'8': 'Vega Novoa'},])
+db.dirección.insertMany([{'1': 'Avenida Flores'},
+            {'2': 'Avenida Geranios'},
+            {'3': 'Avenida Bugambilias'},
+            {'4': 'Avenida Olivos'},
+            {'5': 'Avenida Jazmin'},
+            {'6': 'Avenida Ortencias'},
+            {'7': 'Avenida Obregon'},
+            {'8': 'Avenida Nayarit'},])
+db.teléfono.insertMany([{'1': '653-597-4532'},
+            {'2': '653-591-5155'},
+            {'3': '653-727-4505'},
+            {'4': '653-727-4571'},
+            {'5': '653-727-3735'},
+            {'6': '653-355+7837'},
+            {'7': '653-453-4525'},
+            {'8': '653-783-7863'},])
+db.numero.insertMany([{'1': '4563276272'},
+            {'2': '52598185'},
+            {'3': '25952952'},
+            {'4': '528585115281'},
+            {'5': '518518185'},
+            {'6': '519515818511'},
+            {'7': '51818418484'},
+            {'8': '29518418541'},])
+db.teléfono.insertMany([{'1': '653-597-4531'},
+            {'2': '653-591-5152'},
+            {'3': '653-727-4503'},
+            {'4': '653-727-4574'},
+            {'5': '653-727-3735'},
+            {'6': '653-355+7836'},
+            {'7': '653-453-4527'},
+            {'8': '653-783-7868'},])
+
+use clientes
+db.nombre.insertMany([{'1': 'Tamara'},
+            {'2': 'Nayra'},
+            {'3': 'Macarena'},
+            {'4': 'Anibal'},
+            {'5': 'Jose-Luis'},
+            {'6': 'Mary'},
+            {'7': 'Amaya'},
+            {'8': 'Vega'},])
+db.apellido.insertMany([{'1': 'Murillo'},
+            {'2': 'Calle'},
+            {'3': 'Rueda'},
+            {'4': 'Bermejo'},
+            {'5': 'Buendia'},
+            {'6': 'Montoro'},
+            {'7': 'Candela'},
+            {'8': 'Novoa'},])
+db.dirección.insertMany([{'1': 'Avenida Flores'},
+            {'2': 'Avenida Geranios'},
+            {'3': 'Avenida Bugambilias'},
+            {'4': 'Avenida Olivos'},
+            {'5': 'Avenida Jazmin'},
+            {'6': 'Avenida Ortencias'},
+            {'7': 'Avenida Obregon'},
+            {'8': 'Avenida Nayarit'},])
+db.email.insertMany([{'1': 'tamara@gmail.com'},
+            {'2': 'nayra@gmail.com'},
+            {'3': 'macarena@gmail.com'},
+            {'4': 'anibal@gmail.com'},
+            {'5': 'jose@gmail.com'},
+            {'6': 'mary@gmail.com'},
+            {'7': 'amaya@gmail.com'},
+            {'8': 'vega@gmail.com'},])
+db.forma_de_pago.insertMany([{'1': 'Credito'},
+            {'2': 'Efectivo'},
+            {'3': 'Debito'},
+            {'4': 'Cheque'},
+            {'5': 'Movil'},
+            {'6': 'NFC'},
+            {'7': 'Pagare'},
+            {'8': 'Vales'},])
+
+use alumnos
+db.nombre.insertMany([{'1': 'Tamara'},
+            {'2': 'Nayra'},
+            {'3': 'Macarena'},
+            {'4': 'Anibal'},
+            {'5': 'Jose-Luis'},
+            {'6': 'Mary'},
+            {'7': 'Amaya'},
+            {'8': 'Vega'},])
+db.apellido.insertMany([{'1': 'Murillo'},
+            {'2': 'Calle'},
+            {'3': 'Rueda'},
+            {'4': 'Bermejo'},
+            {'5': 'Buendia'},
+            {'6': 'Montoro'},
+            {'7': 'Candela'},
+            {'8': 'Novoa'},])
+db.email.insertMany([{'1': 'tamara@gmail.com'},
+            {'2': 'nayra@gmail.com'},
+            {'3': 'macarena@gmail.com'},
+            {'4': 'anibal@gmail.com'},
+            {'5': 'jose@gmail.com'},
+            {'6': 'mary@gmail.com'},
+            {'7': 'amaya@gmail.com'},
+            {'8': 'vega@gmail.com'},])
+db.matricula.insertMany([{'1': '1930001'},
+            {'2': '1930002'},
+            {'3': '1930003'},
+            {'4': '1930004'},
+            {'5': '1930005'},
+            {'6': '1930006'},
+            {'7': '1930007'},
+            {'8': '1930008'},])
+db.carrera.insertMany([{'1': 'IDGS'},
+            {'2': 'OCI'},
+            {'3': 'DN'},
+            {'4': 'PROCESOS'},
+            {'5': 'MI'},
+            {'6': 'OCI'},
+            {'7': 'IDGS'},
+            {'8': 'TIDS'},])
+
+---------------------------------------------------
+cd C:\Users\acer\Desktop
+mongod
+mongo
+
+---------------------------------------------------
+mongodump
+use biblicoteca
+db.dropDatabase()
+use hospital
+db.dropDatabase()
+use clientes
+db.dropDatabase()
+use alumnos
+db.dropDatabase()
+mongorestore
+
+---------------------------------------------------
+mongodump --db hospital
+use hospital
+db.dropDatabase()
+mongorestore --db hospital dump/hospital
+
+---------------------------------------------------
+use biblicoteca
+db.autor.drop()
+mongorestore --db biblicoteca --collection autor dump/biblicoteca/autor.bson
+
+
+

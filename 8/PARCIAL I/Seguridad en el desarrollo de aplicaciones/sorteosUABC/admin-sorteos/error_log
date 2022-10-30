@@ -1,0 +1,54 @@
+[19-Nov-2019 22:33:10 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:33:10 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:33:10 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:33:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:33:18 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:33:18 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:33:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:33:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:33:27 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:33:45 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:33:45 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:33:45 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:33:55 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:33:55 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:33:55 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:34:09 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:34:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:34:09 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:35:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:35:17 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:35:17 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:35:29 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:35:29 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:35:29 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:35:37 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:35:37 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:35:37 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[19-Nov-2019 22:35:50 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[19-Nov-2019 22:35:50 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[19-Nov-2019 22:35:50 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:42:29 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:42:29 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:42:29 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:42:30 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:42:30 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:42:30 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:42:41 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:42:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:42:41 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:45:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:45:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:45:24 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:45:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:45:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:45:24 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:45:31 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:45:31 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:45:31 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:45:53 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:45:53 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:45:53 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39
+[22-Nov-2019 18:58:32 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'adminsorteos.db.9973300.hostedresource.com' (0) in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 34
+[22-Nov-2019 18:58:32 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 37
+[22-Nov-2019 18:58:32 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/gwt5a6oje04f/public_html/sitios/sorteosuabc.mx/admin-sorteos/index.php on line 39

@@ -1,0 +1,50 @@
+En Junio del 2018 despues de medio año de investigacion por parte
+de la empresa Appthority. Fueron escaneadas mas de 2.7 millones de 
+aplicaciones de las cuales descubrieron que mas de 3000 de estas
+estaban guardando datos en bases de datos mal configuradas.
+
+--------------------------------------------------------
+Pongo esto en perspectiva porque más de 100 millones de 
+registros de los usuarios que se filtraron a causa de bases
+de datos mal configuradas. Dejando un total de más de 100
+gigabytes de datos filtrados.
+
+
+
+Los investigadores recopilaron:
+2.6 millones de contraseñas y usuarios en texto sin formato
+
+Mas de 4 millones de registros de salud protegida de los 
+usuarios de estas apps
+
+----------------------------------------------------------------
+- 25 millones de registros de ubicaciones GPS
+
+- al rededor de 50,000 registros financieros, incluyendo 
+transacciones bancarias, de pago y Bitcoin
+
+- Más de 4,5 millones de tokens de usuarios de Facebook, 
+LinkedIn, del mismo Firebase y almacenamiento de datos corporativos.
+
+
+Si se preguntan como pudo pasar esto, fue debido a que
+firebase ofrece un amplio numero de servicios, pero no brinda
+proteccion. Los mismos desarrolladores son los que deben
+de configurar las apps que quieran conectar a los servicios
+de firebase
+Por este motivo fue sencillo para quien sea obtener los datos
+
+Los investigadores de Appthority comentaron que solo se requeria 
+de agregar "/.json" al final del URL del servidor para que los 
+datos fueran arrojados
+
+
+-------------------------------------------------------------
+Segun los investigadores existe una posibilidad de que hayamos
+tenido instalada una de esas aplicaciones, nadie estuvo realmente 
+a salvo ya que, las aplicaciones se distribuyen en casi todas las
+categorías, incluyendo las apps de herramientas, salud y estado
+físico, comunicación, finanzas y negocios.
+
+
+

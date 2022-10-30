@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"acc5ca7f4eec4c6f96ad192138eca6e9","collectionName":"horario","type":"collection"}

@@ -1,0 +1,72 @@
+	En que casos sirve utilizar copias de seguridad
+
+~errores de usuario
+~errores de hardware
+~errores de naturales
+~errores de medios (al momento de mover de un lugar al otro los datos)
+
+
+
+---------------------------------------------------------------------------
+
+	Terminos de copia de seguridad
+
+Dispositivo de copia de seguridad
+Copia de seguridad de datos (los datos)
+Copia de seguridad de base de datos
+Copia de seguridad diferencial (DIFERENCIA ENTRE DOS RANGOS)
+Copia de seguridad de registros
+recover (se recupueran a un estado estable)
+recovery (se recupueran a un estado inicial)
+modelo de recuperacion (registro donde se plasman los cambios)
+
+
+---------------------------------------------------------------------------
+
+
+	Modelos de recuperacion
+
+Simple
+	Establecido
+	Menores cambios
+Completa
+	Toda la base de datos
+	Todos los registros y cambios
+Por medio de registros de operaciones masiva
+	No se aconseja tanto
+	Requiere muchos recursos
+	Solo se utiliza para cuando se requiren mucho trabajo por parte de la base de datos
+
+
+---------------------------------------------------------------------------
+
+
+	Una estrategia de copa de seguridad y restauracion
+
+Copia de seguridad
+Restauracion
+Parametros modificables por el usuarios que definen de que manera la copia de seguridad sera hecha
+
+Requiere mucho cuidado elaborar una estrategia
+Se debe tener en cuenta:
+	~Objetivos
+	~Naturaleza de las bases de datos (Tamaño)
+	~Restricciones que tenemos en cuanto a los recursos
+
+---------------------------------------------------------------------------
+
+	Practicas recomendables
+~Modelo adecuado
+~Diseño de la copia de seguridad
+~Horarios
+~Comprobacion de estabilidad y coherencia de los medios
+~Estrategia de copia de seguridad y restaurcaion de documentos
+
+
+
+
+
+
+
+
+

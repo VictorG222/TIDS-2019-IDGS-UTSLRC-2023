@@ -1,0 +1,38 @@
+ISSUES
+Plantilla para definir errores y requerimientos
+del repositorio.
+
+MARKETPLACE
+Nos ayuda a extender las funcionalidades y el flujo de trabajo
+de nuestro repositorio.
+
+EXPLORE
+Apartado para descubrir repositorios, desarrolladores, 
+aplicaciones, organizaciones y articulos de interes.
+
+GITHUB GIST
+Funciona como almacenamiento de fragmentos de codigo.
+
+GITHUB PROJECTS
+Hoja de calculo que se integra a los issues y pull-request.
+
+GITHUB ACTIONS
+es una plataforma de integracion y entrega continua que permite
+automatizar la compilacion, pruebas e implementacion.
+
+GITHUB WIKI
+Es un apartado para guardar documentacion sobre el repositorio.
+
+ORGANIZACION
+Cuenta compartida donde las empresas pueden colaborar con varios
+projectos a la vez.
+
+GITHUB PAGE
+Servicio de alojamiento para sitios estaticos.
+
+
+
+
+
+
+

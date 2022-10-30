@@ -1,0 +1,223 @@
+-------------------------------------PRACTICA 2--------------------------------------
+-------------------------15 registros - copia de 1 coleccion-------------------------
+use sabritas
+db.cantidad.insert({'1': '5000'},
+                    {'2': '1952'},
+                    {'3': '29829'},
+                    {'4': '2982529'},
+                    {'5': '51981'},
+                    {'6': '21542'},
+                    {'7': '895181'},
+                    {'8': '18918'},
+                    {'9': '181414523'},
+                    {'10': '34524524523'},
+                    {'11': '235523235'},
+                    {'12': '2345345325'},
+                    {'13': '32454235'},
+                    {'14': '234545235'},
+                    {'15': '23545235'},)          
+db.ingrediente.insert({'1': 'CAMARON'},
+                    {'2': 'PESCADO'},
+                    {'3': 'SUSHI'},
+                    {'4': 'SANDIA'},
+                    {'5': 'PERA'},
+                    {'6': 'CHILE PIQUIN'},
+                    {'7': 'LIMON'},
+                    {'8': 'CHOCOLATE'},
+                    {'9': 'PILLONCILLO'},
+                    {'10': 'OREGANO'},
+                    {'11': 'CHEDDAR'},
+                    {'12': 'CREMA Y ESPECIAS'},
+                    {'13': 'FLAMIN HOT'},
+                    {'14': 'FUEGO'},
+                    {'15': 'HABANERO'},)
+db.marca.insert({'1': 'Sabritas'},
+                    {'2': 'Barcel'},
+                    {'3': 'Bokados'},
+                    {'4': 'Lays'},
+                    {'5': 'Pringles'},
+                    {'6': 'Botanas Julymoy'},
+                    {'7': 'Cape Cod'},
+                    {'8': 'Chips Sal Barcel'},
+                    {'9': 'Granny Goose'},
+                    {'10': 'Great Value'},
+                    {'11': 'Kettle'},
+                    {'12': 'Sol'},
+                    {'13': 'Santo Gallo'},
+                    {'14': 'Papas Lecaroz'},
+                    {'15': 'Valley Foods'},)
+
+cd C:\Users\acer\Desktop
+mongodump --db sabritas
+db.ingrediente.drop()
+mongorestore --db sabritas --collection ingrediente dump/sabritas/ingrediente.bson
+
+---------------------20 registros - copia y recuperacion completa---------------------
+use tiendita_don_isaac
+db.recargas.insert({'1': '20'},
+                    {'2': '20'},
+                    {'3': '20'},
+                    {'4': '20'},
+                    {'5': '20'},
+                    {'6': '50'},
+                    {'7': '50'},
+                    {'8': '50'},
+                    {'9': '50'},
+                    {'10': '50'},
+                    {'11': '50'},
+                    {'12': '50'},
+                    {'13': '50'},
+                    {'14': '50'},
+                    {'15': '50'},
+                    {'16': '50'},
+                    {'17': '50'},
+                    {'18': '50'},
+                    {'19': '50'},
+                    {'20': '50'},)
+db.almacen.insert({'1': 'Sabritas'},
+                    {'2': 'Coca Cola'},
+                    {'3': 'Sprite'},
+                    {'4': 'Cacahuates Japoneses'},
+                    {'5': 'Agua Ciel'},
+                    {'6': 'Epura'},
+                    {'7': 'Bonafond'},
+                    {'8': 'Chicles'},
+                    {'9': 'Tortillas de maiz'},
+                    {'10': 'Tortillas de harina'},
+                    {'11': 'Leche'},
+                    {'12': 'Frijol KG'},
+                    {'13': 'Limones KG'},
+                    {'14': 'Galletas Emperador'},
+                    {'15': 'Chocolate'},
+                    {'16': 'Atun'},
+                    {'17': 'Salsa Valentina'},
+                    {'18': 'Zucaritas'},
+                    {'19': 'Azucaradas'},
+                    {'20': 'Bud Light'},)
+db.proveedores.insert({'1': 'Sabritas'},
+                    {'2': 'Coca-Cola'},
+                    {'3': 'Pepsi'},
+                    {'4': 'Barcel'},
+                    {'5': 'Bimbo'},
+                    {'6': 'Grupo Modelo'},
+                    {'7': 'Lala'},
+                    {'8': 'Alpura'},
+                    {'9': 'Philip Morris'},
+                    {'10': 'Nestlé'},
+                    {'11': 'Barcel'},
+                    {'12': 'Marinela'},
+                    {'13': 'Gamesa'},
+                    {'14': 'La costeña'},
+                    {'15': 'Nescafe'},
+                    {'16': 'Campbelle'},
+                    {'17': 'Jumex'},
+                    {'18': 'Bokados'},
+                    {'19': 'Malboro'},
+                    {'20': 'La corona'},)
+
+cd C:\Users\acer\Desktop
+mongodump --db tiendita_don_isaac
+db.dropDatabase()
+mongorestore --db tiendita_don_isaac dump/tiendita_don_isaac
+
+------18 registros - copia y recuperacion completa, restauracion de materiales--------
+use taller
+db.especialidad.insert({'1': 'Muebles'},
+                    {'2': 'Mecanica'},
+                    {'3': 'Informatica'},
+                    {'4': 'Ofimatica'},
+                    {'5': 'Contaduria'},
+                    {'6': 'Costura'},
+                    {'7': 'Diseño'},
+                    {'8': 'Cortes de pelos'},
+                    {'9': 'Buceo'},
+                    {'10': 'Futbol'},
+                    {'11': 'Musica'},
+                    {'12': 'Pintura'},
+                    {'13': 'Quimica'},
+                    {'14': 'Matematicas'},
+                    {'15': 'Fisica'},
+                    {'16': 'Comuniciacion'},
+                    {'17': 'Humanidades'},
+                    {'18': 'Derecho'},)
+db.trabajadores.insert({'1': 'Pedro Colomer'},
+                    {'2': 'Dylan de Diego'},
+                    {'3': 'Pedro Exposito'},
+                    {'4': 'Ezequiel Puente'},
+                    {'5': 'Maialen Mañas'},
+                    {'6': 'Benigno Barrera'},
+                    {'7': 'Lucio Casals'},
+                    {'8': 'Unai Cuesta'},
+                    {'9': 'Melania Figueras'},
+                    {'10': 'Lluis Labrador'},
+                    {'11': 'Jenifer Rueda'},
+                    {'12': 'Feliciano Almeida'},
+                    {'13': 'Arantza Morillo'},
+                    {'14': 'Vanessa Aguilera'},
+                    {'15': 'Lola Galindo'},
+                    {'16': 'Nagore Santana'},
+                    {'17': 'Biel Blasco'},
+                    {'18': 'Isabel Bosch    '},)
+db.materiales.insert({'1': 'Libros'},
+                    {'2': 'Lapices'},
+                    {'3': 'Plumas'},
+                    {'4': 'Computadoras'},
+                    {'5': 'Hojas milimetricas'},
+                    {'6': 'Tubos de muestra'},
+                    {'7': 'Calculadora'},
+                    {'8': 'Cortadora de pelo'},
+                    {'9': 'Traje de buceo'},
+                    {'10': 'Tanque de oxigeno'},
+                    {'11': 'Tableta grafica'},
+                    {'12': 'Escritorio'},
+                    {'13': 'Maletin'},
+                    {'14': 'Bata'},
+                    {'15': 'Overol'},
+                    {'16': 'Botas'},
+                    {'17': 'Abaco'},
+                    {'18': 'Microfono'},)
+
+cd C:\Users\acer\Desktop
+mongodump --db taller
+db.dropDatabase()
+mongorestore --db taller dump/taller
+db.materiales.drop()
+mongorestore --db taller --collection materiales dump/taller/materiales.bson
+
+-------------------10 registros - copia y recuperacion completa----------------------
+use oficina
+db.departamentos.insert({'1': 'HR'},
+                    {'2': 'QA'},
+                    {'3': 'VENTAS'},
+                    {'4': 'MARKETING'},
+                    {'5': 'COMPRAS'},
+                    {'6': 'ALMACEN'},
+                    {'7': 'PRODUCCION'},
+                    {'8': 'PLANEACION'},
+                    {'9': 'ADUANAS'},
+                    {'10': 'VINCULACION'},)
+db.papeleria.insert({'1': 'BORRADORES'},
+                    {'2': 'HOJAS DE PAPEL'},
+                    {'3': 'TINTA PARA IMPRESORA'},
+                    {'4': 'TIJERAS'},
+                    {'5': 'BORRADOR'},
+                    {'6': 'CORRECTOR'},
+                    {'7': 'ENGRAPADORA'},
+                    {'8': 'FOLDER'},
+                    {'9': 'SOBRE'},
+                    {'10': 'CLIPS'},)
+db.empleados.insert({'1': 'Pedro Colomer'},
+                    {'2': 'Dylan de Diego'},
+                    {'3': 'Pedro Exposito'},
+                    {'4': 'Ezequiel Puente'},
+                    {'5': 'Maialen Mañas'},
+                    {'6': 'Benigno Barrera'},
+                    {'7': 'Lucio Casals'},
+                    {'8': 'Unai Cuesta'},
+                    {'9': 'Melania Figueras'},
+                    {'10': 'Lluis Labrador'},)
+
+cd C:\Users\acer\Desktop
+mongodump --db oficina
+db.dropDatabase()
+mongorestore --db oficina dump/oficina

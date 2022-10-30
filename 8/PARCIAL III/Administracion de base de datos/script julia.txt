@@ -1,0 +1,44 @@
+https://puzzel.org/es/crossword/play?p=-N9YHF7orcKSlv8kO8Qk
+
+
+
+
+
+
+
+
+----------Establecer la gobernanza de datos
+
+La gobernanza de datos consiste en un grupo de roles, políticas, estándares, métricas y procesos que garantizan la eficacia y eficiencia del uso de la información para contribuir a que una empresa alcance sus metas.
+
+Cumplir con las leyes y regulaciones de gobernanza de datos es absolutamente esencial. No hacerlo puede resultar en multas, sanciones y repercusiones más severas.
+
+Dado que los equipos utilizan los datos de diferentes maneras, es mejor llevar a cabo estas directrices que deben cubrir todos los aspectos de la recopilación y gestión de datos, incluido dónde y cómo se almacenan los datos y qué personal podrá procesarlos.
+
+Desde la calidad de los datos, implementar pautas podría significar garantizar que ciertos datos se eliminen tan pronto como se procesen o que los datos en algunos campos solo tengan un formato particular.
+
+
+----------Hacer de los datos de alta calidad una prioridad
+
+Uno de los pasos más importantes que se puede tomar para mejorar la calidad de los datos. 
+La calidad de los datos a menudo pasa a un segundo plano porque se dedica más tiempo y esfuerzo a la organización. A "mayores y más importantes objetivos".
+
+Comprender cómo la calidad de los datos afecta otras áreas de la organización y su éxito hace una gran diferencia. Mejorar los datos puede ayudar a mejorar la orientación, mantener clientes y reducir los costos.
+
+
+----------Dar estructura a los datos con técnicas flexibles para una buena manipulación
+
+Tener listos todos los datos para su análisis requiere de un buen procesamiento. 
+Para conseguirlo se necesita contar con un proceso flexible y trabajar ante cualquier tipo de formato que ingrese a la base de datos.
+
+Tener la capacidad de organizar ante cualquier incremento en el volumen de los datos que se recolectaran. 
+Se debe estar preparado para manipular información sin importar cualquier modificación.
+
+
+
+JOKE
+https://drive.google.com/file/d/1oMrMj373EWdiRrVcNBfcYKbUTOMusBpS/view?usp=sharing
+
+
+REAL
+https://quizizz.com/join/quiz/62fa1599a3c8ed001d11d541/start?studentShare=true

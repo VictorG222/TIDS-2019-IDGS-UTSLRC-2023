@@ -1,0 +1,167 @@
+mongod
+
+mongo
+
+use escuela
+db.infoescuela.insertMany([
+    {'nombre': 'LUIS',
+    'ciudad': 'SLRC',
+    'estado': 'SONORA',
+    'matriculas':'1',
+    'carreras':'IDGS',},
+    {'nombre': 'PEPE',
+    'ciudad': 'GDL',
+    'estado': 'GDL',
+    'matriculas':'2',
+    'carreras':'MEC',},
+    {'nombre': 'LUISA',
+    'ciudad': 'TEPIC',
+    'estado': 'NAYARIT',
+    'matriculas':'3',
+    'carreras':'PROS',},
+    {'nombre': 'VIRGINIA',
+    'ciudad': 'DF',
+    'estado': 'ESTADO DE MEXICO',
+    'matriculas':'4',
+    'carreras':'DN',},
+    {'nombre': 'VICTOR',
+    'ciudad': 'MXLI',
+    'estado': 'BAJA CALIFORNIA',
+    'matriculas':'5',
+    'carreras':'OCI',},
+])
+
+use usuarios
+db.infousuarios.insertMany([
+    {'nombre': 'VIRGINIA',
+    'direccion': 'Obregon',
+    'telefono': '653-5646-561',
+    'numero':'1',
+    'email':'VIRGINIA@gmail.com',
+    'contrasenia':'VIRGINIA123',},
+    {'nombre': 'PEPE',
+    'direccion': '5 DE MAYO',
+    'telefono': '653-5646-561',
+    'numero':'2',
+    'email':'PEPE@gmail.com',
+    'contrasenia':'PEPE123',},
+    {'nombre': 'LUIS',
+    'direccion': 'REVOLUCION',
+    'telefono': '653-5646-561',
+    'numero':'3',
+    'email':'LUIS@gmail.com',
+    'contrasenia':'LUIS123',},
+    {'nombre': 'LUISA',
+    'direccion': 'FLORES',
+    'telefono': '653-5646-561',
+    'numero':'4',
+    'email':'LUISA@gmail.com',
+    'contrasenia':'LUISA123',},
+    {'nombre': 'VICTOR',
+    'direccion': 'BUGAMBILIAS',
+    'telefono': '653-5646-561',
+    'numero':'5',
+    'email':'VICTOR@gmail.com',
+    'contrasenia':'VICTOR123',},
+])
+
+use sitio
+db.infositio.insertMany([
+    {'nombre': '9GAG',
+    'url': '9GAG.COM',
+    'telefono': '653-5654-256',
+    'email':'9GAG@GMAIL.COM',
+    'redes':'TODAS',},
+    {'nombre': 'FACEBOOK',
+    'url': 'FACEBOOK.COM',
+    'telefono': '653-4465-988',
+    'email':'FACEBOOK',
+    'redes':'TODAS',},
+    {'nombre': 'YOUTUBE',
+    'url': 'YOUTUBE.COM',
+    'telefono': '653-8987-354',
+    'email':'YOUTUBE@GMAIL.COM',
+    'redes':'TODAS',},
+    {'nombre': 'YAHOO',
+    'url': 'YAHOO',
+    'telefono': '653-8769-564',
+    'email':'YAHOO@GMAIL.COM',
+    'redes':'TODAS',},
+    {'nombre': 'BING',
+    'url': 'BING.COM',
+    'telefono': '653-6153-456',
+    'email':'BING@GMAIL.COM',
+    'redes':'TODAS',},
+    {'nombre': 'CLASSROOM',
+    'url': 'YAHOO.COM',
+    'telefono': '653-8796-666',
+    'email':'CLASSROOM@GMAIL.COM',
+    'redes':'TODAS',},
+])
+
+use empleados
+db.infoempleados.insertMany([
+    {'nombre': 'VIRGINIA',
+    'apellido': 'obregon',
+    'numero_de_empleado':'1',
+    'email':'virginia@gmail.com',
+    'departamento':'HR',},
+    {'nombre': 'LUIS',
+    'apellido': 'bugambilias',
+    'numero_de_empleado':'2',
+    'email':'LUIS@gmail.com',
+    'departamento':'',},
+    {'nombre': 'LUISA',
+    'apellido': 'fonseca',
+    'numero_de_empleado':'3',
+    'email':'luisa@gmail.com',
+    'departamento':'QA',},
+    {'nombre': 'PEPE',
+    'apellido': 'alvarez',
+    'numero_de_empleado':'4',
+    'email':'PEPE@gmail.com',
+    'departamento':'HR',},
+    {'nombre': 'VICTOR',
+    'apellido': 'galvna',
+    'numero_de_empleado':'5',
+    'email':'VICTOR@gmail.com',
+    'departamento':'QA',},
+])
+
+use tienda
+db.infotienda.insertMany([
+    {'producto': 'paleta payaso',
+    'codigo': '65465465445',
+    'precio': '25',
+    'departamento':'dulceria',},
+    {'producto': 'miguelito',
+    'codigo': '5456546465',
+    'precio': '2',
+    'departamento':'dulceria',},
+    {'producto': 'pelon',
+    'codigo': '65465545465',
+    'precio': '10',
+    'departamento':'',},
+    {'producto': 'bolitocha',
+    'codigo': '65465465465',
+    'precio': '3',
+    'departamento':'dulceria',},
+    {'producto': 'pulparindo',
+    'codigo': '4654654564',
+    'precio': '3',
+    'departamento':'dulceria',},
+    {'producto': 'lucas',
+    'codigo': '6545464654',
+    'precio': '10',
+    'departamento':'dulceria',},
+])
+
+
+cd cd C:\Users\acer\Desktop
+
+mongodump
+mongodump --db escuela
+
+mongorestore
+mongorestore --db escuela dumb/escuela
+mongorestore --escuela --collection infoescuela dump/tienda/infoescuela.bson

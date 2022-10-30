@@ -1,0 +1,14 @@
+Google reCAPTCHA
+
+
+Es un sistema diseñado para diferenciar entre humanos y ordenadores, se utiliza para que los bots no puedan completar formularios de forma mal intencionada en nombre de un ser humano
+
+
+bettergymVictor
+%FK!f&vwkmM6PBxgj*$U
+
+clave de sitio
+6Ld8f1EgAAAAAKN5JoWBJIrrMmKGR12rKQQzhnLg
+
+llave secreta
+6Ld8f1EgAAAAAPDW_3Cq9xtYHpyWn0qm_rdDvDTu

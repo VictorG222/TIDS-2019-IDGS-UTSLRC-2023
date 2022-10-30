@@ -1,0 +1,74 @@
+DESCRIPCION GENERAL
+
+Una arquitectura sin servidor es una manera de crear y ejecutar 
+aplicaciones y servicios sin tener que administrar infraestructura. 
+La aplicación continúa ejecutándose en servidores, de terceros que 
+se encargan de toda la administración de los servidores. Ya no se 
+tiene que aprovisionar, escalar ni mantener servidores para ejecutar 
+las aplicaciones, bases de datos y sistemas de almacenamiento.
+
+
+Las aplicaciones serverless típicamente hacen uso extensivo de servicios 
+terceros para cumplir tareas que no son centrales o específicas a 
+la aplicación. Una aplicación puede utilizar una familia de servicios
+terceros de un mismo proveedor (ej. Firebase, AWS, Microsoft Azure)
+o usar servicios de proveedor distintos, por ejemplo una aplicación 
+podría usar Auth0 para la autenticación de usuarios, Azure Media Services
+para entregar video por streaming, y OneSignal para push notifications.
+
+
+
+
+
+DESVENTAJAS
+
+En cuanto a las desventajas, 
+
+la primera sería la complejidad que se agrega al estructurar 
+las aplicaciones de esta forma. 
+
+También puede haber un impacto en el desempeño de la 
+aplicación debido a la carga y latencia introducida al estar continuamente 
+invocando servicios que no están inmediatamente disponibles.
+
+Muchas veces hacer test de estas herramientas en local es complicado.
+
+Si necesitamos mucho tiempo de ejecución es posible que tengamos 
+que pedirlo o configurarlo manualmente de lo contrario el servicio nos puede 
+denegar la ejecución de las tareas más complejas.
+
+Si no controlamos la arquitectura correctamente nuestros clientes 
+pueden llegar a tener una mala experiencia de usuario y perjudicar 
+el éxito de nuestra aplicación.
+
+
+
+
+
+LA IMPORTANCIA DE ESTA ARQUITECTURA
+
+Los desarrolladores no deberían tener que preocuparse por los detalles de la 
+infraestructura, la memoria o el tamaño del almacenamiento. 
+Es esta la esencia de las arquitecturas serverless.
+
+Las arquitecturas Serverless se están popularizando, en el almacenamiento, 
+en la construcción de microservicios, y también para el flujo de datos
+y las interacciones.
+
+La arquitectura “serverless” promete un futuro de pago por uso 
+sin casi ninguna necesidad de administración. 
+Los proveedores de las plataformas serverless se encargan de realizar todas 
+las tareas de implementación (redes, dependencias, mantenimiento, etc.) 
+automáticamente y el usuario las disfruta con toda comodidad.
+
+
+
+
+
+
+CONCLUSION
+Las arquitecturas Serverless se han convertido en una opción muy válida 
+y cada vez se estan volviendo más populares por todas sus ventajas obtenidas 
+a traves de delegar la ejecucion de ciertos servicios a terceros.
+
+

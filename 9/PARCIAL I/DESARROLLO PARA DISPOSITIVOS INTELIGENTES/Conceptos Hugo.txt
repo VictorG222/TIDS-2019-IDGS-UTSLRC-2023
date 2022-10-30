@@ -1,0 +1,50 @@
+onCreate()
+Se activa cuando el sistema crea la actividad por primera vez. Ejecuta la logica de arranque basica de la aplicación que debe occurrir una sola vez en toda la vida de la actividad.
+
+onStart()
+Hace que el usuario pueda ver la actividad mientras la app se prepara para entrar en primer plano y se convierta en interactivo. La actividad no permanece en estado Start una vez finalizada la devolución de llamada, la actividad entra en estado Resume.
+
+onResume()
+Cuando la actividad entra en estado Resume pasa al primer plano y a continuación se invoca la devolución de llamada. Este es el estado en la que la app interactua con el usuario, la aplicación permanece en este estado hasta que ocurre un evento que le quita el foco. Tal evento podria ser recibir una llamada telefonica. Que el usuario navegue a otra actividad. O que se apague la pantalla del dispositivo.
+
+onPause()
+El sistema llama a este metodo a modo de primera indicacion de que el usario esta abandonando la actividad. Aunque no siempre signifique que esta finalizando la actividad. Esto indica que la actividad ya no esta en primer plano aunque pueda seguir siendo visible si el usuario enta en modo multiventana.
+
+onStop()
+Es cuando el usuario ya no puede ver la actividad el sistema invoca esta devolucion de llamada. Aqui es donde los componentes del ciclo de vida pueden detener cualquer funcionalidad que no necesite ejecutarse mientra es componente no sea visible en la pantalla.
+
+onDestroy()
+Antes de que finalize la actividad el sistema invoca esta devolución de llamada por los siguientes motivos:
+	1 La actividad esta terminando, debido a que el usuario la descarta por completo o se llama al metodo finish.
+	2 El sistema esta finalizando temporalmente la activdad debido a un cambio de configuracion. Por ejemplo, rotacion del dispositivo o ahorro de bateria.
+
+onRestart()
+
+
+Logcat
+Es una herramienta de linea de comandos que vuelca un registro, de mensajes del sistema, incluidos los seguimientos de pila, los casos de error y los mensajes que se escriben con la clase log.
+
+
+Intents
+Es un objeto de mensajeria que se puede utilizar para solicitar la accion de otro componente en una app existen tres casos de uso principales. Iniciar una actividad. Iniciar un servicio. Transmitir una emision. 
+Tipos:
+	Explicitos
+	Especifican que aplicacion administrara el mensaje, ya sea incluyendo el nombre del paquete o el nombre de la clase del componente. Normalmente el usuario utiliza 	un intel implicito para utilizar un componente dentro se su aplicacion, porque conoce el nombre de la clase o el servicio que desea iniciar.
+
+	Implicitos
+	Son los que no nombran el componente especifico. Pero en cambio declaran una accion general para realizar lo cual permite que un componente de otra aplicacion lo 	maneje.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
