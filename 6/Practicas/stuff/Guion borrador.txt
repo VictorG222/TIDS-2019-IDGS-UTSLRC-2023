@@ -1,0 +1,66 @@
+Muy buenos dias tengan todos ustedes
+A continuacion presentare mi proyecto de estadias
+Titulado Analisis de requisitos para el desarrollo de proyectos en la empresa Migob sa de cv
+
+El contenido de la presentacion esta separado en estos seis puntos que pueden observar a continuacion
+
+La empresa Migob necesitaba de una persona como apoyo al analisis de requisitos para el desarrollo
+de sus procesos por parte de los departamentos de FronEnd, BackEnd y Bases de datos.
+Al tratarse de sistemas de gobiernos los procesos de analisis son fundamentales para el desenvolvimiento de cada proyecto
+
+El objetivo general del proyecto fue realizar los procesos de analisis y la documentacion necesaria
+para el dearrollo de proyectos en la empresa Migob
+
+Como objetivos especificos se tuvo
+Analisis y recolecion de requerimientos
+Modelado de diagramas UML
+Elaboracion de interfaces de entrada y salida para prototipos
+La supervicion del funcionamiento de los sitemas actuales
+
+Todo proceso o documentacion generada dentro de la empresa sera tomado como prototipo
+el cual posteriormente sera evaliado fuera de los tiempos establecidos del proyecto, por lo que no
+se vera reflejado en una implementacion
+El proyecto de estadias en curso conlleva un tiempo maximo de desarrollo el cual se establece en el cronograma de actividades 
+comenzando del 6 de septiembre y termiando el 17 de diciembre del 2021.
+
+A traves de fichas de trabajo se logro la extraccion de requsitos y casos de usos para los modulos corespondientes
+de activo fijo y adqusiciones
+Acorde a las capacitaciones dadas por la empresa y los formatos ya establecidos dentro de esta, se desarrollaron los casos de uso
+Por cada modulo desarrollado tambien se realizo un diccionario de datos es cual especifica las tablas y relaciones que deben ser 
+creadas en la base de datos para en funcionamiento de los modulos
+
+Para el prototipado de interfaces se desarrollaron distintos diseños en base a la mismas fichas de trabajo anteriomente vistas los cuales
+se tomaran como base por el departamento de FrontEnd de la empresa
+
+Para complementar cada caso de uso creado para los modulos, tambien se realizaron diagramas de bases de datos los cuales ayudan a la visualicacion
+de las tablas y relaciones que deben ser creadas en la base de datos
+
+Como referencia para la investigacion tambien se dearrollaron distintos diagramas de componentes los cuales ayudan a la comprension de los apartados
+con los que el sistema cuenta
+
+Para el agregado de funcionalidad al sistema los municipios entregan a la empresa documentos los cuales dentro contienen la ley de ingresos de distintos años
+
+Estos documentos son utilizados para el alta de tipos de cargos que son realizados a un padron en especifico, podiendo ser, un ciudadano, una empresa
+un predio o un vehiculo
+Se realizaba el llenado de tablas con la informacion obtenida de la Ley de ingresos de los dos municipio, dentro de estos documentos esta contenida
+toda la informacion especifica para llenar las distintas columnas del alta de tipos de cargos
+
+Para la supervicion de los sitemas actuales de la empresa, se realizo una matris de pruebas la cual es una revision general de los modulos, que ayuda 
+a la deteccion de errores en el funcionamiento de estos
+la matriz de pruebas se enfoca en documentar los errores que fueron encontrados dentro del sitema, probando funcionalidades de un CRUD 
+
+Las ventajas obtenidas a través de la realización de los procesos de análisis y documentación generada para Migob S.A. de C.V. son las siguientes
+
+Los casos de uso realizados para los modulos de activo fijo y adqusiciones seran utilizados en las etapas de desarrollo de FrontEnd, BackEnd en los meses
+posteriores a su realizacion.
+
+El alta de tipos de cargos sera añanido al sitema integral de recaudacion en los municipios correspondientes para la recaudacion del año 2021.
+
+Las intefaces realizadas dentro de los casos de uso seran tomadas como base para el dearrollo de los modulos en activo fijo y adquisiciones por el departamento de FrontEnd
+La matriz de pruebas ayudara a la realizacion de correciones y detecion de errores.
+
+
+Para concluir mi proyecto realizado dentro de la empresa Migob en el departamento de analisis puedo decir que fue determinante para el
+entendimiento de procesos y la documentacion que es implementada dentro de empresas de caracter publico.
+Asi como tambien para la comprension de las actividades y formatos que la emprea utiliza para generas los documentos que son utilizados en etapas
+de FrontEnd y BackEnd.
